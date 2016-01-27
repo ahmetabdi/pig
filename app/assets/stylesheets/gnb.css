@@ -1,0 +1,395 @@
+/*$assets: '';*/
+.ncsoft .sprite {
+  background-image: url('http://static.ncsoft.com/global/img/gnb.jpg');
+  background-repeat: no-repeat; }
+  .ncsoft .sprite.ncsoft a {
+    background-image: url('http://static.ncsoft.com/global/img/gnb.jpg');
+    background-repeat: no-repeat;
+    background-position: -125px -28px;
+    width: 105px;
+    height: 28px; }
+  .ncsoft .sprite.ncsoft-icon, .ncsoft .sprite.ncsoft-icon a {
+    background-image: url('http://static.ncsoft.com/global/img/gnb.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -28px;
+    display: inline-block;
+    width: 125px;
+    height: 28px; }
+  .ncsoft .sprite.aion {
+    background-position: 0 -61px;
+    width: 119px;
+    height: 53px;
+    display: block; }
+    .ncsoft .sprite.aion:hover {
+      background-position: 0 -121px; }
+  .ncsoft .sprite.caret {
+    background-position: -78px 0;
+    width: 17px;
+    height: 20px;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle; }
+    .ncsoft .sprite.caret:hover {
+      background-position: -38px 0; }
+  .ncsoft .sprite.ncoin {
+    background-position: 0 0;
+    width: 17px;
+    height: 20px;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle; }
+  .ncsoft .sprite.credd {
+    background-position: -221px 0;
+    width: 17px;
+    height: 20px;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle; }
+  .ncsoft .sprite.bladeandsoul {
+    background-position: -254px -61px;
+    width: 119px;
+    height: 53px;
+    display: block; }
+    .ncsoft .sprite.bladeandsoul:hover {
+      background-position: -254px -121px; }
+  .ncsoft .sprite.guildwars2 {
+    background-position: -127px -61px;
+    width: 119px;
+    height: 53px;
+    display: block; }
+    .ncsoft .sprite.guildwars2:hover {
+      background-position: -127px -121px; }
+  .ncsoft .sprite.lineage2 {
+    background-position: -381px -61px;
+    width: 119px;
+    height: 53px;
+    display: block; }
+    .ncsoft .sprite.lineage2:hover {
+      background-position: -381px -121px; }
+  .ncsoft .sprite.wildstar {
+    background-position: -508px -61px;
+    width: 119px;
+    height: 53px;
+    display: block; }
+    .ncsoft .sprite.wildstar:hover {
+      background-position: -508px -121px; }
+  .ncsoft .sprite a:empty:before {
+    content: '\00a0'; }
+
+.ncsoft.gnb-header, .ncsoft.gnb-footer {
+  /**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+  /* HTML5 display-role reset for older browsers */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  min-height: 0;
+  position: relative;
+  vertical-align: top;
+  text-align: left;
+  z-index: 1099;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "DinNextPro", "Myriad Pro", "PT Sans", AppleGothic, sans-serif;
+  line-height: 1em; }
+  .ncsoft.gnb-header html, .ncsoft.gnb-header body, .ncsoft.gnb-header div, .ncsoft.gnb-header span, .ncsoft.gnb-header applet, .ncsoft.gnb-header object, .ncsoft.gnb-header iframe, .ncsoft.gnb-header h1, .ncsoft.gnb-header h2, .ncsoft.gnb-header h3, .ncsoft.gnb-header h4, .ncsoft.gnb-header h5, .ncsoft.gnb-header h6, .ncsoft.gnb-header p, .ncsoft.gnb-header blockquote, .ncsoft.gnb-header pre, .ncsoft.gnb-header a, .ncsoft.gnb-header abbr, .ncsoft.gnb-header acronym, .ncsoft.gnb-header address, .ncsoft.gnb-header big, .ncsoft.gnb-header cite, .ncsoft.gnb-header code, .ncsoft.gnb-header del, .ncsoft.gnb-header dfn, .ncsoft.gnb-header em, .ncsoft.gnb-header img, .ncsoft.gnb-header ins, .ncsoft.gnb-header kbd, .ncsoft.gnb-header q, .ncsoft.gnb-header s, .ncsoft.gnb-header samp, .ncsoft.gnb-header small, .ncsoft.gnb-header strike, .ncsoft.gnb-header strong, .ncsoft.gnb-header sub, .ncsoft.gnb-header sup, .ncsoft.gnb-header tt, .ncsoft.gnb-header var, .ncsoft.gnb-header b, .ncsoft.gnb-header u, .ncsoft.gnb-header i, .ncsoft.gnb-header center, .ncsoft.gnb-header dl, .ncsoft.gnb-header dt, .ncsoft.gnb-header dd, .ncsoft.gnb-header ol, .ncsoft.gnb-header ul, .ncsoft.gnb-header li, .ncsoft.gnb-header fieldset, .ncsoft.gnb-header form, .ncsoft.gnb-header label, .ncsoft.gnb-header legend, .ncsoft.gnb-header table, .ncsoft.gnb-header caption, .ncsoft.gnb-header tbody, .ncsoft.gnb-header tfoot, .ncsoft.gnb-header thead, .ncsoft.gnb-header tr, .ncsoft.gnb-header th, .ncsoft.gnb-header td, .ncsoft.gnb-header article, .ncsoft.gnb-header aside, .ncsoft.gnb-header canvas, .ncsoft.gnb-header details, .ncsoft.gnb-header embed, .ncsoft.gnb-header figure, .ncsoft.gnb-header figcaption, .ncsoft.gnb-header footer, .ncsoft.gnb-header header, .ncsoft.gnb-header hgroup, .ncsoft.gnb-header menu, .ncsoft.gnb-header nav, .ncsoft.gnb-header output, .ncsoft.gnb-header ruby, .ncsoft.gnb-header section, .ncsoft.gnb-header summary, .ncsoft.gnb-header time, .ncsoft.gnb-header mark, .ncsoft.gnb-header audio, .ncsoft.gnb-header video, .ncsoft.gnb-footer html, .ncsoft.gnb-footer body, .ncsoft.gnb-footer div, .ncsoft.gnb-footer span, .ncsoft.gnb-footer applet, .ncsoft.gnb-footer object, .ncsoft.gnb-footer iframe, .ncsoft.gnb-footer h1, .ncsoft.gnb-footer h2, .ncsoft.gnb-footer h3, .ncsoft.gnb-footer h4, .ncsoft.gnb-footer h5, .ncsoft.gnb-footer h6, .ncsoft.gnb-footer p, .ncsoft.gnb-footer blockquote, .ncsoft.gnb-footer pre, .ncsoft.gnb-footer a, .ncsoft.gnb-footer abbr, .ncsoft.gnb-footer acronym, .ncsoft.gnb-footer address, .ncsoft.gnb-footer big, .ncsoft.gnb-footer cite, .ncsoft.gnb-footer code, .ncsoft.gnb-footer del, .ncsoft.gnb-footer dfn, .ncsoft.gnb-footer em, .ncsoft.gnb-footer img, .ncsoft.gnb-footer ins, .ncsoft.gnb-footer kbd, .ncsoft.gnb-footer q, .ncsoft.gnb-footer s, .ncsoft.gnb-footer samp, .ncsoft.gnb-footer small, .ncsoft.gnb-footer strike, .ncsoft.gnb-footer strong, .ncsoft.gnb-footer sub, .ncsoft.gnb-footer sup, .ncsoft.gnb-footer tt, .ncsoft.gnb-footer var, .ncsoft.gnb-footer b, .ncsoft.gnb-footer u, .ncsoft.gnb-footer i, .ncsoft.gnb-footer center, .ncsoft.gnb-footer dl, .ncsoft.gnb-footer dt, .ncsoft.gnb-footer dd, .ncsoft.gnb-footer ol, .ncsoft.gnb-footer ul, .ncsoft.gnb-footer li, .ncsoft.gnb-footer fieldset, .ncsoft.gnb-footer form, .ncsoft.gnb-footer label, .ncsoft.gnb-footer legend, .ncsoft.gnb-footer table, .ncsoft.gnb-footer caption, .ncsoft.gnb-footer tbody, .ncsoft.gnb-footer tfoot, .ncsoft.gnb-footer thead, .ncsoft.gnb-footer tr, .ncsoft.gnb-footer th, .ncsoft.gnb-footer td, .ncsoft.gnb-footer article, .ncsoft.gnb-footer aside, .ncsoft.gnb-footer canvas, .ncsoft.gnb-footer details, .ncsoft.gnb-footer embed, .ncsoft.gnb-footer figure, .ncsoft.gnb-footer figcaption, .ncsoft.gnb-footer footer, .ncsoft.gnb-footer header, .ncsoft.gnb-footer hgroup, .ncsoft.gnb-footer menu, .ncsoft.gnb-footer nav, .ncsoft.gnb-footer output, .ncsoft.gnb-footer ruby, .ncsoft.gnb-footer section, .ncsoft.gnb-footer summary, .ncsoft.gnb-footer time, .ncsoft.gnb-footer mark, .ncsoft.gnb-footer audio, .ncsoft.gnb-footer video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  .ncsoft.gnb-header article, .ncsoft.gnb-header aside, .ncsoft.gnb-header details, .ncsoft.gnb-header figcaption, .ncsoft.gnb-header figure, .ncsoft.gnb-header footer, .ncsoft.gnb-header header, .ncsoft.gnb-header hgroup, .ncsoft.gnb-header menu, .ncsoft.gnb-header nav, .ncsoft.gnb-header section, .ncsoft.gnb-footer article, .ncsoft.gnb-footer aside, .ncsoft.gnb-footer details, .ncsoft.gnb-footer figcaption, .ncsoft.gnb-footer figure, .ncsoft.gnb-footer footer, .ncsoft.gnb-footer header, .ncsoft.gnb-footer hgroup, .ncsoft.gnb-footer menu, .ncsoft.gnb-footer nav, .ncsoft.gnb-footer section {
+    display: block; }
+  .ncsoft.gnb-header body, .ncsoft.gnb-footer body {
+    line-height: 1; }
+  .ncsoft.gnb-header ol, .ncsoft.gnb-header ul, .ncsoft.gnb-footer ol, .ncsoft.gnb-footer ul {
+    list-style: none; }
+  .ncsoft.gnb-header blockquote, .ncsoft.gnb-header q, .ncsoft.gnb-footer blockquote, .ncsoft.gnb-footer q {
+    quotes: none; }
+  .ncsoft.gnb-header blockquote:before, .ncsoft.gnb-header blockquote:after, .ncsoft.gnb-header q:before, .ncsoft.gnb-header q:after, .ncsoft.gnb-footer blockquote:before, .ncsoft.gnb-footer blockquote:after, .ncsoft.gnb-footer q:before, .ncsoft.gnb-footer q:after {
+    content: '';
+    content: none; }
+  .ncsoft.gnb-header table, .ncsoft.gnb-footer table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .ncsoft.gnb-header *, .ncsoft.gnb-footer * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    min-height: 0;
+    position: static; }
+  .ncsoft.gnb-header a, .ncsoft.gnb-header a:visited, .ncsoft.gnb-header a:active, .ncsoft.gnb-footer a, .ncsoft.gnb-footer a:visited, .ncsoft.gnb-footer a:active {
+    display: block;
+    text-decoration: none;
+    color: #959595; }
+  .ncsoft.gnb-header > .container, .ncsoft.gnb-footer > .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 32px; }
+    .ncsoft.gnb-header > .container ul.gnb-left, .ncsoft.gnb-header > .container ul.gnb-right, .ncsoft.gnb-footer > .container ul.gnb-left, .ncsoft.gnb-footer > .container ul.gnb-right {
+      padding: 0 12px; }
+    .ncsoft.gnb-header > .container ul.gnb-right, .ncsoft.gnb-footer > .container ul.gnb-right {
+      text-align: right;
+      float: right; }
+    .ncsoft.gnb-header > .container ul, .ncsoft.gnb-footer > .container ul {
+      margin: 0;
+      padding: 0; }
+      .ncsoft.gnb-header > .container ul li, .ncsoft.gnb-footer > .container ul li {
+        display: inline-block; }
+        .ncsoft.gnb-header > .container ul li:hover > a, .ncsoft.gnb-header > .container ul li:hover > a:visited, .ncsoft.gnb-header > .container ul li:hover > a:active, .ncsoft.gnb-footer > .container ul li:hover > a, .ncsoft.gnb-footer > .container ul li:hover > a:visited, .ncsoft.gnb-footer > .container ul li:hover > a:active {
+          color: #6090c0; }
+        .ncsoft.gnb-header > .container ul li.account, .ncsoft.gnb-footer > .container ul li.account {
+          position: relative; }
+          .ncsoft.gnb-header > .container ul li.account:hover .caret, .ncsoft.gnb-footer > .container ul li.account:hover .caret {
+            background-position: -38px 0; }
+        .ncsoft.gnb-header > .container ul li .gnb-dd, .ncsoft.gnb-footer > .container ul li .gnb-dd {
+          color: #959595;
+          background: #000;
+          border: 1px solid #414141;
+          border-top-color: #000;
+          z-index: 999;
+          padding-top: 0.5em;
+          position: absolute;
+          top: 32px;
+          right: 11px;
+          min-width: 220px;
+          display: none; }
+          .ncsoft.gnb-header > .container ul li .gnb-dd ul, .ncsoft.gnb-footer > .container ul li .gnb-dd ul {
+            margin: 0 auto; }
+            .ncsoft.gnb-header > .container ul li .gnb-dd ul li, .ncsoft.gnb-footer > .container ul li .gnb-dd ul li {
+              height: auto;
+              max-height: auto;
+              min-height: auto;
+              display: block;
+              padding-right: 1.19em;
+              padding-top: 0.12em; }
+              .ncsoft.gnb-header > .container ul li .gnb-dd ul li.ncoin, .ncsoft.gnb-footer > .container ul li .gnb-dd ul li.ncoin {
+                border-top: 1px solid #414141; }
+              .ncsoft.gnb-header > .container ul li .gnb-dd ul li.currency, .ncsoft.gnb-footer > .container ul li .gnb-dd ul li.currency {
+                padding-top: 0.25em;
+                border-bottom: 1px solid #414141;
+                padding-left: 1em;
+                text-align: left; }
+                .ncsoft.gnb-header > .container ul li .gnb-dd ul li.currency span, .ncsoft.gnb-footer > .container ul li .gnb-dd ul li.currency span {
+                  margin-right: 8px; }
+                .ncsoft.gnb-header > .container ul li .gnb-dd ul li.currency a, .ncsoft.gnb-footer > .container ul li .gnb-dd ul li.currency a {
+                  color: #959595;
+                  float: right;
+                  display: inline; }
+                  .ncsoft.gnb-header > .container ul li .gnb-dd ul li.currency a:hover, .ncsoft.gnb-footer > .container ul li .gnb-dd ul li.currency a:hover {
+                    color: #6090c0;
+                    border-color: #3963FE; }
+        .ncsoft.gnb-header > .container ul li:hover .gnb-dd, .ncsoft.gnb-footer > .container ul li:hover .gnb-dd {
+          display: block; }
+
+div.ncsoft.gnb-header {
+  color: #959595;
+  background: #000;
+  border-bottom: 1px solid #414141; }
+  div.ncsoft.gnb-header a, div.ncsoft.gnb-header a:visited, div.ncsoft.gnb-header a:active {
+    color: #959595; }
+  div.ncsoft.gnb-header > .container {
+    margin: 0 auto;
+    width: 100%;
+    height: 32px;
+    min-height: 32px;
+    line-height: 32px; }
+    div.ncsoft.gnb-header > .container ul.gnb-left .games {
+      cursor: pointer;
+      margin-left: 1em;
+      padding-left: 1em; }
+      div.ncsoft.gnb-header > .container ul.gnb-left .games:hover > a {
+        color: #6090c0; }
+        div.ncsoft.gnb-header > .container ul.gnb-left .games:hover > a .caret {
+          background-position: -38px 0; }
+      div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm {
+        color: #959595;
+        background: #000;
+        border-top: 1px solid #414141;
+        z-index: -1;
+        position: absolute;
+        top: 27px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        display: none;
+        transition: all 0.1s ease-in-out; }
+        div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul {
+          margin: 0 auto;
+          margin-top: 9px;
+          /*height: $game-height;*/
+          height: auto;
+          min-height: 72px;
+          line-height: 72px;
+          width: 100%;
+          max-width: 1000px; }
+          div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li {
+            display: inline-block;
+            height: 72px; }
+            @media only screen and (max-width: 768px) {
+              div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li {
+                display: block;
+                margin: 0 auto;
+                margin-right: auto !important;
+                width: 119px; } }
+            div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game {
+              margin-right: 30px;
+              text-align: center; }
+              div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game.promo {
+                text-align: right;
+                float: right;
+                width: 150px; }
+                div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game.promo p {
+                  line-height: 1em; }
+                  div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game.promo p.title {
+                    margin-top: 30px;
+                    font-weight: bold; }
+              div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game .gnb-ln {
+                color: #959595;
+                background: #181d2f;
+                text-align: left;
+                display: none;
+                position: absolute;
+                top: 81px;
+                left: 0;
+                width: 100%;
+                height: 22px;
+                opacity: 0;
+                transition: all 0.1s ease-in-out; }
+                @media only screen and (max-width: 768px) {
+                  div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game .gnb-ln {
+                    display: none !important; } }
+                div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game .gnb-ln ul {
+                  width: 100%;
+                  line-height: 24px;
+                  height: 22px;
+                  min-height: 22px;
+                  max-height: 22px;
+                  margin: 0 auto; }
+                  div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game .gnb-ln ul li {
+                    height: 22px;
+                    min-height: 22px;
+                    max-height: 22px; }
+                    div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game .gnb-ln ul li a {
+                      margin-right: 0.25em;
+                      height: 22px;
+                      display: block; }
+                    div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game .gnb-ln ul li:not(:last-of-type) a::after {
+                      content: "|";
+                      font-size: 0.6em;
+                      margin-left: 1em;
+                      margin-right: 1em;
+                      vertical-align: top; }
+              div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.game:hover .gnb-ln {
+                display: block;
+                opacity: 1;
+                border-top: 1px solid #414141; }
+            div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.aion .gnb-ln li:first-child {
+              margin-left: 0px; }
+            div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child {
+              margin-left: 149px; }
+              div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child body[data-lang="uk"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child body[data-lang="de"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child body[data-lang="fr"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child html[lang="uk"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child html[lang="de"], html[lang="fr"] div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child {
+                margin-left: 0px; }
+            div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.lineage2 .gnb-ln li:first-child {
+              margin-left: 298px; }
+            div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child {
+              margin-left: 447px; }
+              div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child body[data-lang="uk"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child body[data-lang="de"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child body[data-lang="fr"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child html[lang="uk"], div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child html[lang="de"], html[lang="fr"] div.ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child {
+                margin-left: 149px; }
+      div.ncsoft.gnb-header > .container ul.gnb-left .games:hover .gnb-sm {
+        z-index: 999;
+        display: block;
+        top: 32px;
+        opacity: 1;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #414141; }
+    @media only screen and (max-width: 768px) {
+      div.ncsoft.gnb-header > .container ul.gnb-right {
+        display: none; } }
+    div.ncsoft.gnb-header > .container ul.gnb-right > li:not(:last-of-type) > a::after {
+      color: #414141;
+      content: "|";
+      font-size: 0.8em;
+      margin-left: 1em;
+      margin-right: 1em;
+      vertical-align: top; }
+  div.ncsoft.gnb-header:hover {
+    z-index: 99999; }
+
+.ncsoft.gnb-footer {
+  color: #959595;
+  background: #000;
+  border-top: 1px solid #414141; }
+  .ncsoft.gnb-footer a, .ncsoft.gnb-footer a:visited, .ncsoft.gnb-footer a:active {
+    display: block;
+    text-decoration: none;
+    color: #959595; }
+  .ncsoft.gnb-footer .container {
+    height: auto;
+    min-height: 80px; }
+    @media only screen and (max-width: 768px) {
+      .ncsoft.gnb-footer .container {
+        padding: 30px 0; } }
+    .ncsoft.gnb-footer .container .gnb-legal {
+      line-height: 28px;
+      padding-top: 20px; }
+      .ncsoft.gnb-footer .container .gnb-legal .gnb-left {
+        float: left; }
+      .ncsoft.gnb-footer .container .gnb-legal ul.gnb-left > li {
+        margin-right: 30px;
+        color: #959595; }
+      .ncsoft.gnb-footer .container .gnb-legal ul.gnb-right > li:not(:last-of-type) > a::after {
+        color: #333333;
+        content: "|";
+        font-size: 0.8em;
+        margin-left: 1em;
+        margin-right: 1em;
+        vertical-align: top; }
+      @media only screen and (max-width: 768px) {
+        .ncsoft.gnb-footer .container .gnb-legal .gnb-left, .ncsoft.gnb-footer .container .gnb-legal .gnb-right {
+          float: none;
+          text-align: center;
+          margin: 0 auto 30px; }
+        .ncsoft.gnb-footer .container .gnb-legal .gnb-right li {
+          margin-bottom: 30px; } }
+    .ncsoft.gnb-footer .container .gnb-lang {
+      padding: 0em 1em 0 0;
+      border: 1px solid #414141;
+      position: relative;
+      width: 115px; }
+      .ncsoft.gnb-footer .container .gnb-lang ul {
+        position: absolute;
+        right: -1px;
+        bottom: 100%;
+        display: none;
+        min-width: 115px;
+        padding-top: 5px;
+        border: 1px solid #414141;
+        border-bottom: 0;
+        background: #000; }
+        .ncsoft.gnb-footer .container .gnb-lang ul li {
+          display: block;
+          padding: 0 1em 0 0;
+          cursor: pointer;
+          width: 115px; }
+      .ncsoft.gnb-footer .container .gnb-lang:hover ul {
+        display: block; }
+
+body[data-lang="de"] .ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child, body[data-lang="fr"] .ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child, body[data-lang="uk"] .ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.bladeandsoul .gnb-ln li:first-child {
+  margin-left: 0; }
+body[data-lang="de"] .ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child, body[data-lang="fr"] .ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child, body[data-lang="uk"] .ncsoft.gnb-header > .container ul.gnb-left .games .gnb-sm ul li.wildstar .gnb-ln li:first-child {
+  margin-left: 150px; }
+
+body[data-lang="fr"] .ncsoft.gnb-header ul li.currency {
+  min-width: 260px; }

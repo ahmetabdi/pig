@@ -1,0 +1,1054 @@
+#nc-bs-content .all-content {
+    background: url("/img/global/relaunch_main_bg.jpg") center top;
+    background-repeat: no-repeat
+}
+#nc-bs-content .all-content .game-overview {
+    background: transparent
+}
+#nc-bs-content .all-content .game-overview .news-article-slider {
+    background: transparent
+}
+#nc-bs-content .all-content .main-content {
+    overflow: hidden;
+    position: relative;
+    padding: 0
+}
+#nc-bs-content .all-content .main-content .main-inner {
+    overflow: hidden
+}
+#nc-bs-content .all-content .main-content .main-inner .news-content {
+    padding-right: 50px
+}
+#nc-bs-content .all-content .main-content .main-inner .sidebar {
+    padding-top: 30px;
+    text-align: center
+}
+#nc-bs-content .all-content .main-content .main-inner .sidebar .connect {
+    position: relative;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px #3e3e47 solid;
+    border-radius: 5px;
+    -webkit-backface-visibility: hidden;
+    margin: 30px 0 0 0
+}
+#nc-bs-content .all-content .main-content .main-inner .sidebar .connect h3 {
+    color: #f6dc8d;
+    text-transform: uppercase;
+    font-size: 2.375em;
+    padding-bottom: 10px;
+    margin: 15px 20px 0 20px;
+    border-bottom: 1px #3e3e47 solid;
+    text-align: left
+}
+#nc-bs-download .download-container {
+    margin-top: 0px
+}
+#nc-bs-download .download-container h5 {
+    background: url(download_icon_bullet.png) no-repeat left center;
+    padding: 0 0 0 40px;
+    list-style: none;
+    margin: 0
+}
+#nc-bs-download .download-container .info-container {
+    position: relative;
+    background: url(bs_download_top_bg_1920.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin: 0;
+    padding: 0
+}
+@media only screen and (max-width: 48rem) {
+    #nc-bs-download .download-container .info-container {
+        background: url(bs_download_top_bg_768.jpg) no-repeat;
+        background-position: center top
+    }
+}
+#nc-bs-download .download-container .info-container .download-fade {
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    background: -webkit-linear-gradient(transparent, #000);
+    background: -o-linear-gradient(transparent, #000);
+    background: -moz-linear-gradient(transparent, #000);
+    background: linear-gradient(transparent, #000)
+}
+#nc-bs-download .download-container .info-container .downloads {
+    padding-top: 200px;
+    max-width: 800px
+}
+#nc-bs-download .download-container .info-container .contact-support {
+    padding-bottom: 40px
+}
+#nc-bs-download .download-container .info-container h1 {
+    color: #FFF;
+    font-size: 98px !important
+}
+@media only screen and (min-width: 30.0625rem) and (max-width: 48rem) {
+    #nc-bs-download .download-container .info-container h1 {
+        font-size: 60px !important
+    }
+}
+@media only screen and (max-width: 30rem) {
+    #nc-bs-download .download-container .info-container h1 {
+        font-size: 40px !important
+    }
+}
+#nc-bs-download .download-container .info-container .mobile-message {
+    color: #e26414;
+    font-size: 1.6rem;
+    padding: 30px 0 40px
+}
+#nc-bs-download .download-container .info-container .row {
+    padding: 200px 30px 0 30px
+}
+#nc-bs-download .download-container .system-container {
+    background: url(bs_download_bottom_bg_1920.jpg);
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: cover;
+    margin: 0;
+    padding: 100px 0 0 0
+}
+@media only screen and (max-width: 48rem) {
+    #nc-bs-download .download-container .system-container {
+        background: url(bs_download_bottom_bg_768.jpg) no-repeat;
+        background-position: center top
+    }
+}
+#nc-bs-download .download-container .system-container .row {
+    padding: 0 30px
+}
+.fadeLine {
+    background: url(download_img_line.png) no-repeat;
+    background-position: center top;
+    height: 5px;
+    width: 100%;
+    margin: 15px 0 15px
+}
+section.bucket.devtracker .container {
+    padding-bottom: 20px
+}
+#devtracker-menu ul {
+    margin: 0
+}
+#devtracker-menu .new-posts {
+    margin: 20px -10px -50px;
+    padding: 0 0 0 10px;
+    height: 40px;
+    text-transform: uppercase;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer
+}
+#devtracker-menu .new-posts i.fa {
+    margin-right: 6px;
+    font-size: 34px;
+    float: left
+}
+#devtracker-target {
+    padding-left: 220px;
+    min-height: 400px
+}
+#devtracker-target .new-posts {
+    border: 1px solid #111;
+    text-transform: uppercase;
+    cursor: pointer
+}
+#devtracker-target .new-posts:hover {
+    background: #111;
+    border: 1px solid #222
+}
+#devtracker-target .devtracker {
+    background: url(//static.bladeandsoul.com/img/news/bg-pattern2.png) center repeat;
+    margin: 0
+}
+#devtracker-target .devtracker>li {
+    border-top: 20px solid #010103;
+    list-style: none
+}
+#devtracker-target .devtracker>li.loader {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #010103
+}
+#devtracker-target .devtracker>li.loader img {
+    margin-top: 1em
+}
+#devtracker-target .devtracker>li .title {
+    padding: 10px 20px
+}
+#devtracker-target .devtracker>li .title a {
+    color: #b75334;
+    font-size: 26px
+}
+#devtracker-target .devtracker>li .title a:hover {
+    color: #e4702a
+}
+#devtracker-target .devtracker>li .meta {
+    text-align: center;
+    vertical-align: top;
+    float: left;
+    width: 200px;
+    margin: 25px 0
+}
+#devtracker-target .devtracker>li .meta .author img {
+    height: 120px;
+    width: 120px;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px
+}
+#devtracker-target .devtracker>li .meta .author a {
+    color: #fff;
+    display: block
+}
+#devtracker-target .devtracker>li .links {
+    text-align: right;
+    padding: 15px 25px;
+    clear: both
+}
+#devtracker-target .devtracker>li .links a {
+    margin-left: 25px
+}
+#devtracker-target .devtracker>li .tracker-content {
+    padding: 0
+}
+#devtracker-target .devtracker>li .tracker-content .date {
+    margin: 5px 0
+}
+#devtracker-target .devtracker>li .tracker-content img {
+    max-width: 530px
+}
+#devtracker-target .devtracker>li .tracker-content ul {
+    margin: 1em 0 1em 24px
+}
+#devtracker-target .devtracker>li .tracker-content ul>li {
+    line-height: 1.4em;
+    font-size: 1em;
+    padding: 0 0 0 25px
+}
+#devtracker-target .devtracker>li .tracker-content ul>li:before {
+    font-family: FontAwesome;
+    font-size: 8px;
+    margin: 0 10px 0 -20px;
+    content: '\f111';
+    vertical-align: middle;
+    color: #0982d0
+}
+#devtracker-target .devtracker>li .tracker-content blockquote {
+    margin: 15px 0
+}
+#devtracker-target .devtracker>li .tracker-body {
+    font-size: 15px;
+    color: #b1b1b1
+}
+section.bucket.devtracker-widget {
+    overflow: hidden;
+    max-width: 340px;
+    margin: 0 auto
+}
+#devtracker-header h4 {
+    margin: 0;
+    padding: 6px
+}
+#devtracker-header h4 a {
+    text-decoration: none
+}
+#devtracker-menu.widget-devtracker .new-posts {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    position: relative
+}
+#devtracker-menu.widget-devtracker .new-posts i.fa {
+    position: absolute;
+    top: 0;
+    left: 10px
+}
+#devtracker-menu.widget-devtracker ul {
+    display: table;
+    width: 100%
+}
+#devtracker-menu.widget-devtracker ul li {
+    display: table-cell;
+    text-align: center;
+    background-color: #131419;
+    padding: 5px 0;
+    border-left: 1px solid #282830;
+    border-right: 1px solid #282830;
+    cursor: pointer
+}
+#devtracker-menu.widget-devtracker ul li:first-child {
+    border-left: 0
+}
+#devtracker-menu.widget-devtracker ul li:last-child {
+    border-right: 0
+}
+#devtracker-menu.widget-devtracker ul li.active {
+    background-color: #124e72
+}
+#devtracker-menu.widget-devtracker ul li.active i.fa,
+#devtracker-menu.widget-devtracker ul li:hover i.fa {
+    color: #fff
+}
+#devtracker-menu.widget-devtracker ul li i.fa {
+    font-size: 1.5em;
+    margin: 6px 0 0;
+    color: #7f7f7f
+}
+#devtracker-target.widget-devtracker {
+    padding-left: 0
+}
+#devtracker-target.widget-devtracker .devtracker {
+    background: none
+}
+#devtracker-target.widget-devtracker .devtracker>li {
+    border-top: none;
+    background-color: #282834;
+    padding: 10px 6px
+}
+#devtracker-target.widget-devtracker .devtracker>li:nth-child(odd) {
+    background-color: #3a3a44
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item {
+    display: table;
+    width: 100%
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .title {
+    width: 80%;
+    display: table-cell;
+    background: none;
+    padding: 0 0 0 6px;
+    text-align: left;
+    vertical-align: middle
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .title span,
+#devtracker-target.widget-devtracker .devtracker>li .link-item .title a {
+    font-size: 13px
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .title .content {
+    text-align: left
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .body {
+    width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .body .content,
+#devtracker-target.widget-devtracker .devtracker>li .link-item .body .links {
+    display: none
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .body .meta {
+    width: 42px;
+    margin: 0;
+    line-height: 0;
+    float: none;
+    position: relative;
+    top: auto;
+    right: auto
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .body .meta .author img {
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    border: 0;
+    border-radius: 0
+}
+#devtracker-target.widget-devtracker .devtracker>li .link-item .right-arrow {
+    width: 5%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+#devtracker-target.widget-devtracker .devtracker>li[data-type='twitter'] .title br {
+    display: none
+}
+#devtracker-target.widget-devtracker .devtracker>li[data-type='twitter'] .title .content {
+    padding: 0
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post {
+    text-align: center;
+    border: 1px solid #545362
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post a:hover {
+    color: #fff
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .text-container {
+    display: inline;
+    font-size: 13px;
+    color: #9b9b9b
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container {
+    width: 20%
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container.right-arrow-container {
+    float: right
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container.left-arrow-container {
+    float: left
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container:hover {
+    cursor: pointer
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container i.fa {
+    font-size: 1.50em
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container i.fa:hover {
+    color: #fff
+}
+#devtracker-target.widget-devtracker .devtracker>li.view-all-post .arrow-container i.fa.inactive {
+    color: #fff;
+    cursor: default;
+    opacity: 0.3
+}
+#devtracker-target.widget-devtracker.container {
+    width: 100%;
+    min-width: 0;
+    max-width: none
+}
+.bs.devtracker-widget .large-underline {
+    height: 1px;
+    width: 100%;
+    background: url("//static.bladeandsoul.com/img/devtracker/dev_top_line.png") 0 0;
+    margin: 10px 0 10px
+}
+.bs.devtracker-widget .small-underline {
+    height: 1px;
+    width: 100%;
+    background: url("//static.bladeandsoul.com/img/devtracker/dev_separate_line.png") 0 0;
+    margin-top: 10px
+}
+.bs.devtracker-widget #devtracker-header {
+    text-align: left
+}
+.bs.devtracker-widget #devtracker-header h4 {
+    height: 50px;
+    line-height: 60px;
+    font-size: 20px;
+    background-size: contain;
+    font-size: 25px
+}
+.bs.devtracker-widget #devtracker-header h4 a {
+    color: #cfcfcf
+}
+.bs.devtracker-widget #devtracker-menu {
+    position: relative
+}
+.bs.devtracker-widget #devtracker-menu ul.filters {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li {
+    padding: 0 3%;
+    background: transparent;
+    position: relative;
+    width: 25%;
+    border: none
+}
+@media only screen and (max-width: 48rem) {
+    .bs.devtracker-widget #devtracker-menu ul.filters li {
+        padding: 0 5%
+    }
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.fr,
+.bs.devtracker-widget #devtracker-menu ul.filters li.de {
+    padding: 0 7%
+}
+@media only screen and (max-width: 48rem) {
+    .bs.devtracker-widget #devtracker-menu ul.filters li.fr,
+    .bs.devtracker-widget #devtracker-menu ul.filters li.de {
+        padding: 0 9%
+    }
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li:before {
+    display: block;
+    content: "";
+    padding-top: 100%;
+    position: relative;
+    height: 0;
+    background: url("//static.bladeandsoul.com/img/devtracker/devtracker_top_icons.png");
+    background-size: 400% 300%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.globe:hover:before {
+    background-position: 100% 50%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.globe.active:before {
+    background-position: 100% 0
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.globe:before {
+    background-position: 100% 100%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.reddit:hover:before {
+    background-position: 66% 50%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.reddit.active:before {
+    background-position: 66% 0
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.reddit:before {
+    background-position: 66% 100%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.weixin:hover:before {
+    background-position: 0 50%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.weixin.active:before {
+    background-position: 0 0
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.weixin:before {
+    background-position: 0 100%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.twitter:hover:before {
+    background-position: 33% 50%
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.twitter.active:before {
+    background-position: 33% 0
+}
+.bs.devtracker-widget #devtracker-menu ul.filters li.twitter:before {
+    background-position: 33% 100%
+}
+.bs.devtracker-widget #devtracker-menu .new-posts {
+    color: #87c2ed
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker {
+    margin-top: 20px;
+    color: #cfcfcf
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li {
+    padding-top: 0;
+    background-color: transparent
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li:nth-last-child(2) .small-underline {
+    display: none
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li:nth-child(odd) {
+    background-color: transparent
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li.view-all-post {
+    border: none;
+    background-color: #000
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li .body {
+    padding-top: 7px;
+    vertical-align: top
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li .title {
+    line-height: 1.3rem
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li .title>span {
+    font-size: 13px;
+    color: #b1b1b1
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li .title .tracker-content a {
+    font-size: 15px;
+    margin-bottom: 1.25rem;
+    list-style-position: outside;
+    font-family: inherit
+}
+.bs.devtracker-widget #devtracker-target ul.devtracker li .title .author-link a {
+    color: #a0a0a0
+}
+.bs.devtracker-widget #devtracker-target .view-all-post {
+    padding-bottom: 0
+}
+.bs.devtracker-widget #devtracker-target .view-all-post span.inactive {
+    opacity: 0.4
+}
+.bs.devtracker-widget #devtracker-target .view-all-post .view-all-link {
+    margin-top: 20px
+}
+.bs.devtracker-widget #devtracker-target .view-all-post .view-all-link a {
+    font-size: 13px;
+    color: #9b9b9b
+}
+.bs.devtracker-widget #devtracker-target .loader {
+    padding-top: 30px
+}
+.loader .bns {
+    width: 100px;
+    height: 42px;
+    background: url("//static.bladeandsoul.com/img/devtracker/devtracker_loading.png") left center;
+    margin: 2% auto 0 auto;
+    animation: play 0.5s steps(16) infinite
+}
+@keyframes play {
+    0% {
+        background-position: 0 0px
+    }
+    100% {
+        background-position: 0 -716px
+    }
+}
+.loader .redloaderline {
+    background: url("/img/devtracker/dev_page_loading_line.png") left center;
+    background-size: cover;
+    width: 80%;
+    height: 12px;
+    margin: -4px auto 0 auto
+}
+.loader .loading-text {
+    text-align: center;
+    padding: 20px 0
+}
+.nc-news-list {
+    background: transparent
+}
+.nc-news-list .news-list-large {
+    height: 540px
+}
+.nc-news-list .news-list-row {
+    position: relative;
+    z-index: 100;
+    padding: 48px 0 15px
+}
+.nc-news-list .news-list-row .slick-slide {
+    padding: 0 20px
+}
+.nc-news-list .news-list-row .news-article {
+    display: block;
+    max-width: 420px;
+    height: 380px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.nc-news-list .news-list-row .view-all-link-row {
+    text-align: right;
+    padding-right: 1.875rem
+}
+.nc-news-list .news-list-row a.view-all-link {
+    display: inline-block;
+    width: auto;
+    padding-top: 0.375rem;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #b1b1b1;
+    background: none
+}
+.nc-news-list .news-article-slider {
+    height: 540px !important
+}
+.side-promo .promo-inner {
+    padding-bottom: 25px;
+    margin-bottom: 40px
+}
+.side-promo .promo-inner a img {
+    width: 100%
+}
+.side-promo .promo-inner p {
+    margin: 0 0 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 100
+}
+.bs.side-promo {
+    margin: 0 auto
+}
+.bs.side-promo .promo-inner {
+    max-width: 340px;
+    min-width: 260px;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid transparent;
+    border-top: 3px solid transparent
+}
+@media only screen and (max-width: 48rem) {
+    .bs.side-promo .promo-inner {
+        height: 450px
+    }
+}
+@media only screen and (min-width: 48.0625rem) {
+    .bs.side-promo .promo-inner {
+        height: 470px
+    }
+}
+.bs.side-promo .promo-inner:hover #crossfade .top {
+    opacity: 0
+}
+.bs.side-promo .promo-inner #crossfade {
+    position: absolute;
+    width: 100%
+}
+.bs.side-promo .promo-inner #crossfade img {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    -ms-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out
+}
+.bs.side-promo .promo-inner .message {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 100
+}
+.bs.side-promo .promo-inner h4 {
+    margin-top: 10px;
+    font-size: 55px;
+    font-family: BakaExpertRegular, serif;
+    z-index: 1000
+}
+.bs.side-promo .promo-inner p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: white;
+    z-index: 1000
+}
+.news-nav {
+    font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 50px
+}
+.news-nav .header-underline {
+    background: url(//static.bladeandsoul.com/img/social/banner_separate_line.png) no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 5px;
+    width: 100%;
+    padding: 10px 0
+}
+.news-nav #loader {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    top: 150px
+}
+.news-nav #loader img {
+    display: block;
+    margin: 0 auto
+}
+.news-nav ul {
+    height: 22px;
+    margin-bottom: 0;
+    margin-left: 0
+}
+.news-nav ul li {
+    display: inline-block;
+    padding: 0;
+    opacity: 0;
+    width: auto;
+    margin-left: -10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    position: relative;
+    margin-right: 25px
+}
+.news-nav ul li a {
+    display: block;
+    font-weight: 100;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center
+}
+.news-nav ul li p.callout {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    padding: 5px 8px;
+    border-top: none;
+    margin: 0;
+    white-space: nowrap;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer
+}
+.news-nav ul li p.callout:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #10415f transparent
+}
+.news-nav ul li.nostreams a {
+    color: #16161c;
+    cursor: default
+}
+.news-nav ul li.nostreams a:hover {
+    color: #16161c
+}
+.news-nav ul li.visible {
+    opacity: 1;
+    margin-left: 0
+}
+.news-nav a.toggle {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+    width: 42px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10
+}
+.news-nav a.toggle span {
+    width: 100%;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer
+}
+.news-nav a.toggle span:hover {
+    color: white
+}
+.news-nav a.collapse {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    height: 42px;
+    width: 30px;
+    border-right: 1px solid #444
+}
+.news-nav a.collapse span {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer
+}
+.news-nav .nav-list {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    padding: 0 20px;
+    z-index: 9;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+    -webkit-transition: all .3s
+}
+.news-nav .nav-list label,
+.news-nav .nav-list input {
+    cursor: pointer
+}
+.news-nav .nav-list ul {
+    height: auto
+}
+.news-nav .nav-list ul li {
+    display: block;
+    width: auto;
+    opacity: 1;
+    margin-left: 0
+}
+.news-nav .nav-list.show {
+    padding: 20px;
+    height: 130px
+}
+.news-content {
+    margin-bottom: 40px
+}
+.news-content .image-overlay {
+    background: url(//static.bladeandsoul.com/img/social/banner_outline.png) no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.news-content .loadmore,
+.news-content .gotoarchives {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer
+}
+.news-content .loadmore span,
+.news-content .gotoarchives span {
+    display: block
+}
+.news-content .news-post {
+    overflow: hidden
+}
+.news-content .news-post:last-of-type {
+    border: none
+}
+.news-content .news-post img.post-image {
+    width: 100%;
+    height: auto
+}
+.news-content .news-post span.image-wrap {
+    width: 100%;
+    height: 30vw;
+    max-height: 400px;
+    overflow: hidden;
+    display: block;
+    margin: 0 0 20px;
+    position: relative
+}
+.news-content .news-post span.image-wrap img.post-image {
+    width: 100%;
+    height: auto;
+    margin: auto
+}
+.news-content .news-post span.image-wrap img.post-image.hero-image {
+    height: 100%;
+    width: auto
+}
+.news-content .news-post h2 {
+    margin-bottom: 0
+}
+.news-content .news-post h2 a {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase
+}
+.news-content .news-post p.byline {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #c0b9a2
+}
+.news-content .news-post p.excerpt {
+    font-family: "Droid Sans", serif;
+    font-size: 15px;
+    color: #b1b1b1
+}
+.news-content .news-post a.readmore {
+    display: block;
+    text-align: left;
+    text-transform: none;
+    float: left;
+    font-size: 13px;
+    color: #b75334;
+    text-decoration: underline
+}
+.news-content .news-post.reg span.post-thumbnail {
+    border: 3px solid white;
+    border-radius: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 20px
+}
+.news-content .news-post.reg h2 {
+    margin-top: 0
+}
+.news-content .news-post.social-box {
+    padding-bottom: 20px
+}
+.news-content .news-post.social-box img.post-image {
+    margin: 0 0 20px
+}
+.news-content .news-post.social-box img.post-thumbnail {
+    border: 3px solid white;
+    border-radius: 10px;
+    float: left;
+    width: 15%;
+    max-width: 100px;
+    height: auto
+}
+.news-content .news-post.social-box .social-content {
+    float: left;
+    width: 85%;
+    padding-left: 50px
+}
+.news-content .news-post.social-box .social-content h2 {
+    text-transform: none;
+    margin: 0;
+    font-size: 18px;
+    position: relative
+}
+.news-content .news-post.social-box .social-content h2 span {
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    font-size: 20px
+}
+.news-content .news-post.twitch h2 {
+    text-transform: none;
+    margin: 20px 0 0;
+    font-size: 18px;
+    position: relative
+}
+.news-content .news-post.twitch h2 span {
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 10px
+}
+.news-content .news-post.twitch p.datetime,
+.news-content .news-post.social-box p.datetime {
+    font-size: 13px;
+    margin: 0 0 20px
+}
+.news-content .news-post.twitch a.viewpost,
+.news-content .news-post.social-box a.viewpost {
+    font-size: 13px;
+    text-decoration: underline
+}
+.news-content .news-post.twitch a.viewpost:hover,
+.news-content .news-post.social-box a.viewpost:hover {
+    color: #e4702a
+}
+.news-content .news-post.twitch p.social-content-body,
+.news-content .news-post.social-box p.social-content-body {
+    font-size: 15px
+}
+.news-content .news-post.twitch p.social-content-body a,
+.news-content .news-post.social-box p.social-content-body a {
+    color: #8bdbf5
+}
+.bs.news-module .item-separator {
+    background: url("/img/social/banner_separate_line.png") 0 0;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 5px;
+    margin: 40px 0
+}
+.bs.news-module .news-nav ul p.callout {
+    color: #b75334
+}
+.bs.news-module .news-nav ul p.callout:before {
+    border-color: transparent transparent #b75334 transparent
+}
+.bs.news-module .news-nav ul li a {
+    color: #9b9b9b;
+    font-size: 22px
+}
+.bs.news-module .news-nav ul li.active a {
+    color: white;
+    text-decoration: none
+}
+.bs.news-module .news-nav ul li.nostreams a {
+    opacity: 0.3
+}
+.bs.news-module .news-content .news-post h2 {
+    font-size: 0
+}
+.bs.news-module .news-content .news-post h2 .title {
+    margin-bottom: 20px
+}
+.bs.news-module .news-content .news-post h2 a {
+    text-transform: none
+}
+.bs.news-module .news-content .social-content h2 a {
+    font-size: 20px
+}

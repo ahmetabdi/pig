@@ -1,0 +1,45 @@
+<div id="main-nav" class="contain-to-grid">
+   <div class="mobile-logo"><a class="main-logo hide-text hide-for-xlarge-up" href="<%= root_path %>">Blade &amp; Soul</a></div>
+   <nav class="top-bar desktop" data-topbar="" role="navigation" data-options="is_hover:false">
+      <ul class="title-area">
+         <li class="name">
+            <a class="main-logo hide-text show-for-xlarge-up" href="<%= root_path %>">Blade &amp; Soul</a>
+         </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+      <section class="top-bar-section">
+         <div class="sticky">
+            <!-- Left Nav Section -->
+            <ul class="left">
+               <li class="has-dropdown">
+                  <label>Game<%= image_tag 'nav-arrow.png'%></label>
+                  <ul class="sub-menu">
+                     <li id="aboutNav"><a href="/en/what-is-blade-and-soul/">About</a></li>
+                     <li id="racesNav"><a href="/en/game/races/">Races</a></li>
+                     <li id="classesNav"><a href="/en/game/classes/">Classes</a></li>
+                     <li id="factionsNav"><a href="/en/game/factions/">Factions</a></li>
+                  </ul>
+               </li>
+               <li><a href="/en/news/">News</a></li>
+               <li><a href="/en/media/">Media</a></li>
+               <li><a href="http://forums.bladeandsoul.com/forums">Forums</a></li>
+               <li><a href="download" class="btn-download">Download</a></li>
+            </ul>
+         </div>
+         <!-- Right Nav Section -->
+         <ul class="right">
+            <!-- <li class="subscribe-link"><a href="#" data-reveal-id="newsletter-subscribe-form" class="subscribe"><img src="//static.bladeandsoul.com/img/global/subscribe-icon.png" alt="Sign Up for Newsletter">Sign Up for Newsletter</a></li> -->
+            <li class="preorder-link"><a target="_blank" href="https://shop.bladeandsoul.com/signature/list?lang=en-US" class="subscribe"><span></span>Get Signature Pack</a></li>
+            <!-- <li>
+               <ul class="sns-set">
+                 <li><a target="_blank" href="https://www.facebook.com/BladeAndSoul" class="social facebook"><i class="fa fa-facebook"></i></a></li>
+                 <li><a target="_blank" href="https://www.twitter.com/bladeandsoul" class="social twitter"><i class="fa fa-twitter"></i></a></li>
+                 <li><a target="_blank" href="https://www.youtube.com/bladeandsoul" class="social youtube"><i class="fa fa-youtube-play"></i></a></li>
+                 <li><a target="_blank" href="http://www.twitch.tv/bladeandsoul" class="social youtube"><i class="fa fa-twitch"></i></a></li>
+               </ul>
+               </li> -->
+         </ul>
+      </section>
+   </nav>
+</div>
