@@ -1,164 +1,73 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
-
 <!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Blade &amp; Soul</title>
-      <%= stylesheet_link_tag('gnb.css') %>
+      <title>Login</title>
       <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
       <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-      <%= stylesheet_link_tag('fonts.css') %>
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-      <!-- <link rel="stylesheet" href="vendor.css">
-         <link rel="stylesheet" href="main.css">
-         <link rel="stylesheet" href="components.css"> -->
+      <%= stylesheet_link_tag('gnb.css') %>
+      <%= stylesheet_link_tag('fonts.css') %>
       <%= stylesheet_link_tag('login.css') %>
+      <%= stylesheet_link_tag('main.css') %>
       <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
       <%= javascript_include_tag('common.js') %>
    </head>
    <body>
-      <div class="ncsoft gnb-header">
-         <div class="container">
-            <ul class="gnb-right">
-               <li class="signup"><a href="https://account.ncsoft.com/signup/index">Create Account</a></li>
-               <li class="login"><a href="login.html">Log In</a></li>
-               <li class="support"><a href="https://support.bladeandsoul.com/hc/en-us">Support</a></li>
-            </ul>
-            <ul class="gnb-left">
-               <li class="logo sprite ncsoft"><a href="http://ncsoft.com"></a></li>
-               <li class="games">
-                  Games<span class="sprite caret">&nbsp;</span>
-                  <div class="gnb-sm">
-                     <ul>
-                        <li class="game aion">
-                           <a href="http://na.aiononline.com"><span class="sprite aion">&nbsp;</span></a>
-                           <div class="gnb-ln">
-                              <ul>
-                                 <li><a href="http://na.aiononline.com">Game Site</a></li>
-                                 <li><a href="http://na.aiononline.com/en/store/">Store</a></li>
-                                 <li><a href="http://aion.patcher.ncsoft.com/AION/aioninstaller/AionInstaller.exe">Download</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="game bladeandsoul">
-                           <a href="http://bladeandsoul.com/en/"><span class="sprite bladeandsoul">&nbsp;</span></a>
-                           <div class="gnb-ln">
-                              <ul>
-                                 <li><a href="http://www.bladeandsoul.com/en/">Game Site</a></li>
-                                 <li><a href="https://shop.bladeandsoul.com/signature/list?lang=en-US">Store</a></li>
-                                 <li><a href="http://bladeandsoul.com/en/download">Download</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="game lineage2">
-                           <a href="http://www.lineage2.com"><span class="sprite lineage2">&nbsp;</span></a>
-                           <div class="gnb-ln">
-                              <ul>
-                                 <li><a href="http://www.lineage2.com">Game Site</a></li>
-                                 <li><a href="http://www.lineage2.com/en/marketplace/">Store</a></li>
-                                 <li><a href="http://lineage2.patcher.ncsoft.com/LINEAGE2/Lineage2Installer.exe">Download</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="game wildstar">
-                           <a href="http://www.wildstar-online.com"><span class="sprite wildstar">&nbsp;</span></a>
-                           <div class="gnb-ln">
-                              <ul>
-                                 <li><a href="http://www.wildstar-online.com">Game Site</a></li>
-                                 <li><a href="https://shop.wildstar-online.com/">Store</a></li>
-                                 <li><a href="http://wildstar.patcher.ncsoft.com/Wildstar.exe">Download</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-               </li>
-            </ul>
-         </div>
-      </div>
-      <div id="containerWrap" class="">
+      <%= render 'layouts/nav' %>
+
+      <div id="containerWrap">
          <div id="header"></div>
-         <!-- contents -->
          <div id="contents">
             <header id="topHeader">
                <h1 class="subTitle">Log In</h1>
             </header>
             <div id="contentWrap">
-               <script>
-                  var io_install_stm = false;
-                  var io_bbout_element_id = "blackbox";
-                  var io_operation = "ioBegin";
-                  var io_max_wait = 5000;
-                  var ticks = 0;
-               </script>
                <div class="wrapLogin">
-                  <form name="loginForm" id="loginForm" method="post" action="/login/signin" _lpchecked="1">
-                     <input name="return_url" type="hidden" value="https://account.ncsoft.com/settings/index">
-                     <input name="service_code" type="hidden" value="">
-                     <input name="message" type="hidden" value="">
-                     <input name="reason" type="hidden" value="">
-                     <input type="hidden" id="blackbox" name="blackbox" value="0400l1oURA1kJHkNf94lis1ztjbaCjtwdIzByGkcphoaxfC5NdfJu2smATLVJYo+2/mvqZyCemmpZb11SymuXlKryeXc4KIy3xRrzWYTHlPicx4xsGw2bx4mA73cSWGtAQBADPWCyXC02/owt6O60biHEq5IV5DpPnzPKA75SqnFv74B84+POrI4MlDvgCJ6XflMU04YuPNoCVsSnjwNVGXSgGQ8InPsuf6/kpMgG84gzO5PMQF00uJew9XqxzJ4y+q4cwWY/bl0FHZD+pMitHJiZBO1m7ghlkxqljAlWwXHcT+hgN6tJA4p1nA+k9XRlIy/G+QSverS3ZTx2hZpxAB/ED/1EUzr5RqFsZCT9pClbeob0++rZWqBTbTAWtdI2jmPxA9x3qRKbjOL3hbVzcgeU3dJjIRqH2CvHm/CURv2QYUilgmNGy2geu+wPwB7YcyEaf1wmOpmO8iM1eyAwSCEbex3iIB1jFypKULPxBs5mS87u2S/HETBwmvlED9A2vTUhZELPs+xcOj+mvvWgPnrWkpnxT0KSgg3qMOOdKVCWE8Wtu8sWMb/IoQonmwROuiCBJVw9IRDLb0JdqJazYFDT+ByE+1n5k11Lrtb1TNlzVPAdp/1/wwkJ8yZh0oClnCJyAfUMZ5LKFoA4BbW41P4v49qpLt2ZL85hw6+vl8ZjUN3p2VjxRMgSIkpIh3A707ln/wqsPiGBcfEpkWTlnMi5g4mmYKxVbRrSUpGCTU5RhBJBWREjZRCqJPvKY43XxwwSPO/q+frf4pdRg5Zc9KXej9DfBakb+IuW3no2SAp6IEROgBu5s9+gHYDQ66QZc8Zn8xfDXFdmdoWiIYYjbEvXCXVTb29yNd9DKThVP1hAyB7YMdbHsyiYBQ1h4tNGHTh8CNjY0flnyvXp/8RBfmu6Th8V/Y1fgX7TqggNnf1Z0dn+WvCwoViHULgwe4ejOQ9IF9wOHABPWNq9K72wUVXedwTidneZ5WeqDQRJDWdY1eYOcNXGWh5eh0R9vRNj5evLzdF6XhbUcd9xD6KYGuP2XGuOQze6J7M7oJtTwjjd0GJs7tCljUYLA9VJzkPBiugKafmHdtb43HgtbGUOekhAObHa83CDZB6rkX9DUU0pSKr3kjOpvkxQmQ0zZqTWk1N7vtywb43wW5C75hdCWkF3D7Y3rm+yCGBlAvwTTDIQa/RPSTohRUELPOlbdpr71anliy11neb+tT6qjoMxOOZPjzofM8wOeBHLzzLcxBlT4B5dVw/wtzNLzGT2uefYE2dnVQ8UeREjFmHPmnClNMvcawUn4bNjgpPuE7oXdF/JF/4cez9wAxkwHPky78nzZLywBD8O96qYObkEIq+uu0LiWi0oCFw25fbSdu3DZ2D0kHs4MFN6DxYoKwUn4bNjgpPuE7oXdF/JF/4cez9wAxkwHPky78nzZLywBD8O96qYObkEIq+uu0LiZQ2xqnhqterpb8vF0HCiPlWUVGDopYsY7syORHxqFyqwMjIp7z21wMT9DjJzgzYxxXbfiKO2WfBFK7hF7UNnwumDot0Rd1D8HgG83hvDYpGidZewGkisWrtCmn2FjClQ8JpjzLXbzmqfDY/bfsbQ2L0o5AOLPk0ABikB4eVCSsB3EyNr++JWR7UccLg1I40ao/YjxuS60RY4CWC82REzCuS9szJ0ddxh9VRs+XpEVJVTHDtT9UFVNVDpadtf5rEIXUx2s0EmLZPjuHvHXxcmzC3qTotZVJydjYhWBBV6JpgjKrgqwZw6tFgmIuEMy0pI7ZRz/UwbyD5Jf35csKA7mgebQopzYFJ9rLnIoy4dStWWuq98i4R7c6cajj08tEaNjCxYBkOmAEhpbE5lMvxMJZCjcMxl+GbBDHiGdqSsrrug204TEzt5JRHCnczKCg7lMivjcbpjctjxSwSJe6BCdbaJn1eQ4zWxzgtvhMCKxzkn/VJ5djiw+M=">
+                  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                      <div class="login-input">
                         <fieldset>
                            <legend>LOG IN</legend>
                            <div class="inputGroup">
-                              <label>Email Address</label>
-                              <input type="email" id="id" name="id" maxlength="64" autocomplete="off" placeholder="Email Address" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDiEFu6xIcAAAAXhJREFUOMvNk8FLVFEUxn/ffRdmIAla1CbBFDGCpoiQWYlBLty7UHAvEq2HYLhveDMws2/TIly6E9SdIEj+AVYgRaTgXhe2C968x2nhTOjow8pNZ/ede/ide893Lvx3UavVhkMIk30dQqiGECpF9e68CCG8LpfL3yStAAIk6Z2kT3Ect68C+AGdSroFVEII82aWSXoGYGYHVwE0qOM43pU0BXw3s1zSI2AnSZKXhYB6vT7inLvd7XZ/eu8fOOe2JEW9zjkwZ2bHkoayLDtpt9ufLzzBe/8GWC6VSpc7nIE2pLPLeu/fA0uDQ3T/6pp6039uZnfN7Ieke1EUrQOu3/VawPloNBrbwIyZ7TvnLvg/+mKOJ3xk88NR4R4sADM92fp9MDRMdXaRxenHVMbuFy8SMAFkZval2Wyu9ZN3Hk4zWx0nAtKsWwxotVrNNE2f5nn+CrB+/nRvlSR5y2EK0TWbSKfT+fo3Lribfr4bA/yfl56y2kkuZX8BjXVyqMs8oFcAAAAASUVORK5CYII=&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                              <%= f.label :email, 'Email Address' %>
+                              <%= f.email_field :email, placeholder: "Email Address", autofocus: true, autocomplete: false %>
                            </div>
                            <div class="inputGroup wrapPassword">
-                              <label>Password</label>
-                              <input type="password" id="password" name="password" maxlength="16" placeholder="Password" style="cursor: pointer; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDiEFu6xIcAAAAXhJREFUOMvNk8FLVFEUxn/ffRdmIAla1CbBFDGCpoiQWYlBLty7UHAvEq2HYLhveDMws2/TIly6E9SdIEj+AVYgRaTgXhe2C968x2nhTOjow8pNZ/ede/ide893Lvx3UavVhkMIk30dQqiGECpF9e68CCG8LpfL3yStAAIk6Z2kT3Ect68C+AGdSroFVEII82aWSXoGYGYHVwE0qOM43pU0BXw3s1zSI2AnSZKXhYB6vT7inLvd7XZ/eu8fOOe2JEW9zjkwZ2bHkoayLDtpt9ufLzzBe/8GWC6VSpc7nIE2pLPLeu/fA0uDQ3T/6pp6039uZnfN7Ieke1EUrQOu3/VawPloNBrbwIyZ7TvnLvg/+mKOJ3xk88NR4R4sADM92fp9MDRMdXaRxenHVMbuFy8SMAFkZval2Wyu9ZN3Hk4zWx0nAtKsWwxotVrNNE2f5nn+CrB+/nRvlSR5y2EK0TWbSKfT+fo3Lribfr4bA/yfl56y2kkuZX8BjXVyqMs8oFcAAAAASUVORK5CYII=&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" autocomplete="off">
+                              <%= f.label :password, 'Password' %>
+                              <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
                            </div>
                            <div class="wrapAccountRemember">
                               <input type="checkbox" name="remember" id="remember" class="checkbox">
-                              <label id="remember_label">Remember me</label>
+                              <%= f.check_box :remember_me, id: "remember", class: "checkbox" %>
+                              <%= f.label :remember_me, "Remember me" %>
                            </div>
-                           <div class="wrapError" id="errEmptyEmail">Please enter your email address.</div>
-                           <div class="wrapError" id="errEmptyPw">Please enter your password.</div>
-                           <div class="wrapError" id="errKnown">Something went wrong on our end. Please try again in a few minutes.</div>
+                           <%= render 'layouts/errors' %>
                            <div class="wrapButton">
-                              <a href="#" class="button squareSingle" onclick="doLogin();">LOG IN</a>
+                              <%= f.submit "LOG IN", class: "button squareSingle" %>
                            </div>
+
+                           <div class="wrapButton">
+                              <span class="box square"><a href="#" id="btnConfirm" class="button">CONTINUE</a></span>
+                              <span class="bar">|</span>
+                              <span class="box square" style="float: right;"><a href="http://us.ncsoft.com" class="button">CANCEL</a></span>
+                           </div>
+
                            <div class="wrapLink">
-                              <span class="link"><a href="https://account.ncsoft.com/signup/index?serviceCode=&amp;returnUrl=https%3A%2F%2Faccount.ncsoft.com%2Fsettings%2Findex" class="button text">Create NC Account</a></span>
+                              <span class="link">
+                                 <%= link_to "Create Account", new_session_path(resource_name), class: "button text" %>
+                              </span>
                               <span class="bar"></span>
-                              <span class="link"><a href="https://account.ncsoft.com/forgotpassword/index?serviceCode=&amp;returnUrl=https%3A%2F%2Faccount.ncsoft.com%2Fsettings%2Findex" class="button text">Canʹt log in?</a></span>
+                              <span class="link">
+                                 <%= link_to "Canʹt log in?", new_password_path(resource_name), class: "button text" %>
+                              </span>
                            </div>
                         </fieldset>
                      </div>
-                  </form>
+                  <% end %>
                </div>
             </div>
          </div>
-         <!-- // contents -->
-         <div id="footer"></div>
       </div>
    </body>
 </html>
