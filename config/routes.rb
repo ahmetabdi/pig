@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  get '/download', to: 'pages#download'
   get '/launcher', to: 'launcher#home'
-  get '/download', to: 'launcher#download'
 
-  root to: "launcher#home"
+  root to: "pages#home"
 end
