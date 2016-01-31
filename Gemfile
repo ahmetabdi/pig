@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'devise', github: 'plataformatec/devise', branch: 'master'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'foreman'
   gem 'byebug'
