@@ -1,5 +1,5 @@
 body { 
-		background: #232323 image-path('bg.png') repeat;
+		background: #232323 image-url('holder/bg.png') repeat;
 		margin: 0;
 		padding: 0;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -14,7 +14,7 @@ body {
 		min-height: 720px;
 		margin: 0 auto;
 		text-align: center;
-		background: image-path('bg-light.png') no-repeat;
+		background: image-url('holder/bg-light.png') no-repeat;
 		padding-top: 20px;
 		}
 		
@@ -62,7 +62,7 @@ body {
 		border: none;
 		width: 960px;
 		height: 2px;
-		background: image-path('divider.png');
+		background: image-url('holder/divider.png');
 		margin: 10px 0;
 		}
 		
@@ -73,12 +73,12 @@ body {
 		.progress {
 		height: 110px;
 		margin: 80px 0;
-		background: image-path('progress-container.png') no-repeat;
+		background: image-url('holder/progress-container.png') no-repeat;
 		position: relative;
 		}
 		
 		.txt-launch-day-hat {
-		background: image-path('txt-launch-day-hat.png') no-repeat;
+		background: image-url('holder/txt-launch-day-hat.png') no-repeat;
 		width: 117px;
 		height: 159px;
 		position: absolute;
@@ -87,7 +87,7 @@ body {
 		}
 		
 		.txt-launch-day {
-		background: image-path('txt-launch-day.png') no-repeat;
+		background: image-url('holder/txt-launch-day.png') no-repeat;
 		width: 112px;
 		height: 110px;
 		position: absolute;
@@ -97,7 +97,7 @@ body {
 		
 		.progress-bar {
 		height: 43px;
-		background: #72dbf1 image-path('progress-bar.png') repeat-x;
+		background: #72dbf1 image-url('holder/progress-bar.png') repeat-x;
 		position: absolute;
 		top:14px;
 		left: 0px;
@@ -127,7 +127,7 @@ body {
 		.mailing-list input[type=text]{
 		width:280px;
 		height: 16px;
-		background: image-path('form-bg.png') no-repeat;
+		background: image-url('holder/form-bg.png') no-repeat;
 		border: none;
 		color: #c9c9c9;
 		font-size: 14px;
@@ -138,7 +138,7 @@ body {
 		.mailing-list input[type=submit]{
 		width:90px;
 		height: 44px;
-		background: image-path('btn-subscribe.png') no-repeat;
+		background: image-url('holder/btn-subscribe.png') no-repeat;
 		border: none;
 		text-indent: -5000px;
 		cursor: pointer;
@@ -158,7 +158,7 @@ body {
 		outline: none;
 		}
 		
-		.tipsy { margin-bottom: 25px; font-size: 18px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: image-path('tipsy.png'); font-family: 'LeagueGothicRegular'; text-transform: uppercase;  }
+		.tipsy { margin-bottom: 25px; font-size: 18px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: image-url('holder/tipsy.png'); font-family: 'LeagueGothicRegular'; text-transform: uppercase;  }
   		.tipsy-inner { padding: 10px 20px; background-color: black; color: white; max-width: 400px; text-align: right; -webkit-box-shadow: 0 20px 15px rgba(0,0,0,0.5); -moz-box-shadow: 0 20px 15px rgba(0,0,0,0.5);   }
   		.tipsy-inner { -moz-border-radius:5px; -webkit-border-radius:5px; }
   		.tipsy-north { background-position: top center; }
