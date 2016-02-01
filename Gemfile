@@ -10,7 +10,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'devise', github: 'plataformatec/devise', branch: 'master'
-gem 'newrelic_rpm'
 gem 'sass-rails'
 
 gem 'rails_12factor', group: :production
