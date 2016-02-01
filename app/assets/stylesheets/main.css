@@ -7576,7 +7576,6 @@ body#game-factions-page div#factions-wrapper div.faction .fade {
     background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
     background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000', GradientType=1);
     position: absolute;
     top: 0;
     left: 0;
@@ -8979,7 +8978,6 @@ only screen and (max-width: 30rem) {
     background: -o-linear-gradient(top, transparent 0%, #000 100%);
     background: -ms-linear-gradient(top, transparent 0%, #000 100%);
     background: linear-gradient(to bottom, transparent 0%, #000 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
     margin-bottom: 40px;
     padding-top: 20px;
     padding-bottom: 20px;

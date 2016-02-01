@@ -4925,25 +4925,6 @@ kbd {
     background-color: #a0d3e8;
     color: #333
 }
-"[data-magellan-expedition]",
-[data-magellan-expedition-clone] {
-    background: #fff;
-    z-index: 50;
-    min-width: 100%;
-    padding: 10px
-}
-"[data-magellan-expedition]" .sub-nav,
-[data-magellan-expedition-clone] .sub-nav {
-    margin-bottom: 0
-}
-"[data-magellan-expedition]" .sub-nav dd,
-[data-magellan-expedition-clone] .sub-nav dd {
-    margin-bottom: 0
-}
-"[data-magellan-expedition]" .sub-nav a,
-[data-magellan-expedition-clone] .sub-nav a {
-    line-height: 1.8em
-}
 @-webkit-keyframes rotate {
     from {
         -webkit-transform: rotate(0deg)

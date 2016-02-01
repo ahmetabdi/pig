@@ -12,6 +12,8 @@ class ApplicationController < ActionController::Base
       false
     elsif is_a?(LauncherController)
       "launcher"
+    elsif is_a?(HolderController)
+      "holder"
     else
       "application"
     end
