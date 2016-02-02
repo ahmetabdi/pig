@@ -1,3 +1,7 @@
 <!-- 850 x 750 -->
 
-<%= render "devise/sessions/form" %>
+<% if user_signed_in? %>
+  Welcome!
+<% else %>
+  <%= render "devise/sessions/form" %>
+<% end %>

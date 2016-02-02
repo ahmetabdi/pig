@@ -6,8 +6,18 @@
     <title>Pig | Launcher</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <%= stylesheet_link_tag('gnb.css') %>
+    <%= stylesheet_link_tag('fonts.css') %>
+    <%= stylesheet_link_tag('login.css') %>
+    <%= stylesheet_link_tag('main.css') %>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <%= javascript_include_tag('common.js') %>
   </head>
+
+  <%= render 'layouts/nav' %>
 
   <body>
     <%= yield %>
