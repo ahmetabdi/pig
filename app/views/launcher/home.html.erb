@@ -1,9 +1,14 @@
 <!-- 850 x 750 -->
+<%= javascript_include_tag 'masonry.min.js' %>
 
 <% if user_signed_in? %>
   <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
+    <div class="grid-item">
+      <%= image_tag 'games/blade-and-soul.png'%>
+    </div>
+    <div class="grid-item">
+      <%= image_tag 'games/star-wars-the-old-republic.png' %>
+    </div>
   </div>
   Welcome!
 <% else %>
