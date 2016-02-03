@@ -46,7 +46,7 @@ strong { font-weight: 500; }
 
 .inputGroup.wrapPassword input.invalid { background: #ffffff url(../img/themeBNS/iconValidation.png) no-repeat 97% -47px !important; }
 
-body { background: #000 url("bgBody.jpg") no-repeat 50% 0; color: #d8d8d8; }
+body { background: #000 image-url('bgBody') no-repeat 50% 0; color: #d8d8d8; }
 
 legend { display: none; }
 

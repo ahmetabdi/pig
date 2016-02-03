@@ -1,16 +1,16 @@
 <!-- 850 x 750 -->
-<%= javascript_include_tag 'masonry.min.js' %>
 
+<style>
+img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+</style>
 <% if user_signed_in? %>
-  <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-    <div class="grid-item">
-      <%= image_tag 'games/blade-and-soul.png'%>
-    </div>
-    <div class="grid-item">
-      <%= image_tag 'games/star-wars-the-old-republic.png' %>
-    </div>
-  </div>
-  Welcome!
+  <%= image_tag 'games/blade-and-soul.png', width: 250 %>
+  <hr/>
+  <%= image_tag 'games/star-wars-the-old-republic.png', width: 250 %>
 <% else %>
   <%= render "devise/sessions/form" %>
 <% end %>
