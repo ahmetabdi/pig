@@ -1,16 +1,38 @@
-<h2>Forgot your password?</h2>
+<div id="containerWrap">
+   <div id="header"></div>
+   <div id="contents">
+      <header id="topHeader">
+         <h1 class="subTitle">Forgot your password?</h1>
+      </header>
+      <div id="contentWrap">
+         <div class="wrapLogin">
+            <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+               <div class="login-input">
+                  <fieldset>
+                     <div class="inputGroup">
+                        <%= f.label :email, 'Email Address' %>
+                        <%= f.email_field :email, placeholder: "Email Address", autofocus: true, autocomplete: false %>
+                     </div>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+                     <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+                     <div class="wrapButton">
+                        <%= f.submit "Send me reset password instructions", class: "button squareSingle" %>
+                     </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+                     <div class="wrapLink">
+                        <span class="link">
+                           <%= link_to "Login", launcher_path, class: "button text" %>
+                        </span>
+                        <span class="bar"></span>
+                        <span class="link">
+                           <%= link_to "Create Account", new_registration_path(resource_name), class: "button text" %>
+                        </span>
+                     </div>
+                  </fieldset>
+               </div>
+            <% end %>
+         </div>
+      </div>
+   </div>
+</div>

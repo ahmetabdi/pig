@@ -1,17 +1,4 @@
-module ApplicationHelper
-
-  def resource_name
-    :user
-  end
- 
-  def resource
-    @resource ||= User.new
-  end
- 
-  def devise_mapping
-    @devise_mapping ||= Devise.mappings[:user]
-  end
-
+module DeviseHelper
   def devise_error_messages!
     return "" if resource.errors.empty?
 
@@ -21,7 +8,7 @@ module ApplicationHelper
                       resource: resource.class.model_name.human.downcase)
 
     html = <<-HTML
-    <div id="error_explanation errEmptyEmail" class="wrapError">
+    <div class="wrapError" id="errEmptyEmail" style="display: block;">
       <h2>#{sentence}</h2>
       <ul>#{messages}</ul>
     </div>

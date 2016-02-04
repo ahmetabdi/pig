@@ -16,9 +16,7 @@ class ApplicationController < ActionController::Base
   private
 
   def layout
-    if is_a?(Devise::SessionsController)
-      false
-    elsif is_a?(LauncherController)
+    if devise_controller? || is_a?(LauncherController)
       "launcher"
     elsif is_a?(HolderController)
       "holder"

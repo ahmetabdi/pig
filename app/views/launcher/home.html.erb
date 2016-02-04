@@ -10,18 +10,18 @@ img {
 
 <script>
 $(document).ready(function() {
-  $("a").click(function() {
-    var id = $(this).data("id");
+  $(".game-launch").click(function() {
+    var process_name = $(this).data("process");
     HelperObject.run(id);
   });
 });
 </script>
 
 <% if user_signed_in? %>
-  <b>Run me as admin!</b>
-  <%= link_to (image_tag 'games/blade-and-soul.png', width: 250), '#', data: { id: 'bns' } %>
+  <%= link_to (image_tag 'games/blade-and-soul.png', width: 250), '#', data: { process: 'Client' }, class: 'game-launch' %>
   <hr/>
-  <%= link_to (image_tag 'games/star-wars-the-old-republic.png', width: 250), '#', data: { id: 'swtor' } %>
+  <%= link_to (image_tag 'games/star-wars-the-old-republic.png', width: 250), '#', data: { process: 'swtor' }, class: 'game-launch' %>
+  <hr/>
 <% else %>
   <%= render "devise/sessions/form" %>
 <% end %>
