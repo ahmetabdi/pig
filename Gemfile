@@ -11,6 +11,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'devise', github: 'plataformatec/devise', branch: 'master'
 gem 'sass-rails'
+gem 'bootstrap', '~> 4.0.0.alpha3'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
 
 gem 'rails_12factor', group: :production
 
