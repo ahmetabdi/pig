@@ -1,15 +1,18 @@
 /*$assets: '';*/
 .ncsoft .sprite {
-  background-image: url('http://static.ncsoft.com/global/img/gnb.jpg');
+  background-image: image-url('holder/pig.png');
+  background-size: 80px 60px;
   background-repeat: no-repeat; }
   .ncsoft .sprite.ncsoft a {
-    background-image: url('http://static.ncsoft.com/global/img/gnb.jpg');
+    background-image: image-url('holder/pig.png');
+    background-size: 80px 60px;
     background-repeat: no-repeat;
     background-position: -125px -28px;
     width: 105px;
     height: 28px; }
   .ncsoft .sprite.ncsoft-icon, .ncsoft .sprite.ncsoft-icon a {
-    background-image: url('http://static.ncsoft.com/global/img/gnb.jpg');
+    background-image: image-url('holder/pig.png');
+    background-size: 80px 60px;
     background-repeat: no-repeat;
     background-position: 0px -28px;
     display: inline-block;
