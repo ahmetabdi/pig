@@ -16,11 +16,10 @@
   </head>
 
   <body id="<%= @page %>" class="<%= @page %>">
-    <%#= render 'layouts/nav' %>
-    <%#= render 'layouts/menu' %>
+    <%= render 'layouts/nav' %>
+    <%= render 'layouts/menu' %>
     <%#= render 'layouts/errors' %>
     <%= yield %>
-    <%#= render 'layouts/footer' %>
+    <%= render 'layouts/footer' %>
   </body>
- <script src="<%#= asset_path('main-react.js') %>"></script>
 </html>

@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   end
 
   get '/download', to: 'pages#download'
+  get '/support', to: 'pages#support'
   get '/launcher', to: 'launcher#home'
 
-  root to: "holder#holder"
+  # root to: "holder#holder"
+  root to: "pages#home"
 end
