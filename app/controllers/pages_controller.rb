@@ -6,4 +6,9 @@ class PagesController < ApplicationController
   def download
     @page = 'download-page'
   end
+
+  # Instant Payment Notification - notify_url
+  def hook
+  	raise params
+  end
 end
