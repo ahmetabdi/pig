@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: [:hook]
+
   def home
     @page = 'home-page'
   end
