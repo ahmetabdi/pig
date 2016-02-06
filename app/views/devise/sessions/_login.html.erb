@@ -1,8 +1,8 @@
 <div class="gb ut">
   <div class="uv">
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'alq dj j' }) do |f| %>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'alq dj j' }) do |f| %>
 
-      <%= devise_error_messages! %>
+      <%= render 'layouts/errors' %>
 
       <a href="/" class="l amb">
         <%= image_tag('login.png', alt: "brand") %>
@@ -12,20 +12,16 @@
         <%= f.email_field :email, placeholder: "Email Address", autofocus: true, autocomplete: false, class: 'form-control' %>
       </div>
 
-      <div class="et">
+      <div class="et alu">
         <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'form-control' %>
       </div>
 
-      <div class="et">
-        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", class: 'form-control' %>
-      </div>
-
       <div class="amb">
-        <button class="cg fp">Register</button>
+        <button class="cg fp">Log In</button>
       </div>
 
       <footer class="apd">
-        <%= link_to "Login", login_path, class: "dp" %> |
+        <%= link_to "Create Account", new_user_registration_path, class: "dp" %> |
         <%= link_to "Canʹt log in?", new_password_path(resource_name), class: "dp" %>
       </footer>
     <% end %>

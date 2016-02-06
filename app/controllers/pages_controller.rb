@@ -9,6 +9,14 @@ class PagesController < ApplicationController
 
   # Instant Payment Notification - notify_url
   def hook
-  	raise params
+    user = User.find_by(email: params["custom"]) # Get user by callback email (Devise email)
+
+    if user
+      if params["payment_status"] == "Completed"
+        puts "COMPLETED!"
+        # Do a susessful payment confirmation
+      end
+      PaymentLog.create!(log: params, user: user)
+    end
   end
 end

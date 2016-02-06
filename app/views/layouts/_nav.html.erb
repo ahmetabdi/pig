@@ -1,16 +1,56 @@
-<div class="ncsoft gnb-header">
-   <div class="container">
-      <ul class="gnb-right">
-         <% if user_signed_in? %>
-         <li class="login"><%= link_to "Logout", destroy_user_session_path %></li>
-         <% else %>
-         <li class="login"><%= link_to "Log In", new_user_session_path %></li>
-         <li class="signup"><%= link_to "Create Account", new_user_registration_path %></li>
-         <% end %>
-         <li class="support"><%= link_to "Support", support_path %></li>
-      </ul>
-      <ul class="gnb-left">
-         <li class="logo sprite ncsoft"><a href="http://ncsoft.com"></a></li>
-      </ul>
-   </div>
-</div>
+<nav class="ck pc os app-navbar">
+  <div class="by">
+    <div class="or">
+      <button type="button" class="ou collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="cv">Toggle navigation</span>
+        <span class="ov"></span>
+        <span class="ov"></span>
+        <span class="ov"></span>
+      </button>
+      <a class="e" href="/">
+         <%= image_tag("logo.png", alt: 'brand') %>
+      </a>
+    </div>
+    <div class="f collapse" id="navbar-collapse-main">
+
+        <ul class="nav navbar-nav ss">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+        </ul>
+
+        <form class="ow og i" role="search">
+          <div class="et">
+            <input type="text" class="form-control" data-action="grow" placeholder="Search">
+          </div>
+        </form>
+
+        <% if user_signed_in? %>
+        <ul class="nav navbar-nav og ale ss">
+          <li>
+            <%= link_to "Logout", destroy_user_session_path %>
+          </li>
+        </ul>
+        <% else %>
+        <ul class="nav navbar-nav og ale ss">
+          <li>
+            <a href="/login">Login</a>
+          </li>
+          <li>
+            <a href="/register">Register</a>
+          </li>
+        </ul>
+        <% end %>
+
+        <ul class="nav navbar-nav st su sv">
+          <li><a href="/">Home</a></li>
+          <% if user_signed_in? %>
+          <li><%= link_to "Logout", destroy_user_session_path %></li>
+          <% else %>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+          <% end %>
+        </ul>
+      </div>
+  </div>
+</nav>

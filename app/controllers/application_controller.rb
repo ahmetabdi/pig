@@ -5,20 +5,18 @@ class ApplicationController < ActionController::Base
 
   layout :layout
 
-  def after_sign_in_path_for(resource)
-    launcher_path
-  end
+  # def after_sign_in_path_for(resource)
+  #   launcher_path
+  # end
 
   def after_sign_out_path_for(resource)
-    launcher_path
+    root_path
   end
 
   private
 
   def layout
-    if devise_controller? || is_a?(LauncherController)
-      "launcher"
-    elsif is_a?(HolderController)
+    if is_a?(HolderController)
       "holder"
     else
       "application"

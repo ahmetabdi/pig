@@ -16,11 +16,8 @@
   </head>
 
   <body>
-    <%#= render 'layouts/nav' %>
-    <%#= render 'layouts/menu' %>
-    <%#= render 'layouts/errors' %>
+    <%= render 'layouts/nav' %>
     <%= yield %>
-    <%#= render 'layouts/footer' %>
   </body>
   <% if Rails.env.production? %>
   <script>
