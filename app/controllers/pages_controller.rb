@@ -14,10 +14,9 @@ class PagesController < ApplicationController
     user = User.find_by(email: params["custom"]) # Get user by callback email (Devise email)
 
     if user
-      if params["payment_status"] == "Completed"
-        puts "COMPLETED!"
-        # Do a susessful payment confirmation
-      end
+      # if params["payment_status"] == "Completed"
+      #   # Do a susessful payment confirmation
+      # end
       PaymentLog.create!(log: params, user: user)
     end
   end
