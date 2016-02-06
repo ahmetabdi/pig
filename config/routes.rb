@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get '/download', to: 'pages#download'
   get '/support', to: 'pages#support'
   get '/launcher', to: 'launcher#home'
-  get '/hook', to: 'pages#hook'
+  post '/hook', to: 'pages#hook'
+
+  post '/', to: 'pages#home', as: 'paypal_return'
 
   # root to: "holder#holder"
   root to: "pages#home"
