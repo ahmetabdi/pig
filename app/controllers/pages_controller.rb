@@ -17,7 +17,8 @@ class PagesController < ApplicationController
       # if params["payment_status"] == "Completed"
       #   # Do a susessful payment confirmation
       # end
-      PaymentLog.create!(log: params, user: user)
+      PaymentLog.create!(log: params.to_h, user: user)
     end
+    render nothing: true
   end
 end
