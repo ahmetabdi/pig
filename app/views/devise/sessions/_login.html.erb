@@ -4,12 +4,12 @@
 
       <%= render 'layouts/errors' %>
 
-      <a href="/" class="l amb">
+      <div class="l amb">
         <%= image_tag('login.png', alt: "brand") %>
-      </a>
+      </div>
 
       <div class="et">
-        <%= f.email_field :email, placeholder: "Email Address", autofocus: true, autocomplete: false, class: 'form-control' %>
+        <%= f.email_field :email, placeholder: "Email Address", autofocus: false, autocomplete: false, class: 'form-control' %>
       </div>
 
       <div class="et alu">
