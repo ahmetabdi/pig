@@ -18,14 +18,12 @@ $(document).ready(function() {
 </script>
 
 <% if user_signed_in? %>
-<div class="w-full amt">
-
+<div class="w-full">
   <%= link_to (image_tag 'games/blade-and-soul-black.png', width: 250), '#', data: { name: 'Blade & Soul', process: 'Client' }, class: 'game-launch' %>
   <hr/>
   <%= link_to (image_tag 'games/star-wars-the-old-republic.png', width: 250), '#', data: { name: 'Star Wars: The Old Republic', process: 'swtor' }, class: 'game-launch' %>
   <hr/>
-
-  </div>
+</div>
 <% else %>
   <%= render "devise/sessions/login" %>
 <% end %>

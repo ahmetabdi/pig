@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <%= render 'layouts/nav' unless params[:launcher] %>
+    <%= render 'layouts/nav' unless params[:launcher] || request.fullpath == '/launcher' %>
     <%= yield %>
   </body>
 </html>
