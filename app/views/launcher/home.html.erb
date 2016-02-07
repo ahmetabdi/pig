@@ -1,5 +1,3 @@
-<!-- 850 x 750 -->
-
 <style>
 img{
   display: block;
@@ -12,7 +10,8 @@ img{
 $(document).ready(function() {
   $(".game-launch").click(function() {
     var process_name = $(this).data("process");
-    HelperObject.run(process_name);
+    var friendly_name = $(this).data("name");
+    HelperObject.run(process_name, friendly_name);
   });
 });
 </script>
