@@ -5,9 +5,13 @@ class ApplicationController < ActionController::Base
 
   layout :layout
 
-  # def after_sign_in_path_for(resource)
-  #   launcher_path
-  # end
+  def after_sign_in_path_for(resource)
+    if params["launcher"]
+      launcher_path
+    else
+      root_path
+    end
+  end
 
   def after_sign_out_path_for(resource)
     root_path

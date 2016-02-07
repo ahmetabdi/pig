@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <%= render 'layouts/nav' %>
+    <%= render 'layouts/nav' unless params[:launcher] %>
     <%= yield %>
   </body>
 </html>

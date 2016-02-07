@@ -1,7 +1,7 @@
 <!-- 850 x 750 -->
 
 <style>
-img {
+img{
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -18,10 +18,14 @@ $(document).ready(function() {
 </script>
 
 <% if user_signed_in? %>
-  <%= link_to (image_tag 'games/blade-and-soul.png', width: 250), '#', data: { name: 'Blade & Soul', process: 'Client' }, class: 'game-launch' %>
+<div class="w-full amt">
+
+  <%= link_to (image_tag 'games/blade-and-soul-black.png', width: 250), '#', data: { name: 'Blade & Soul', process: 'Client' }, class: 'game-launch' %>
   <hr/>
   <%= link_to (image_tag 'games/star-wars-the-old-republic.png', width: 250), '#', data: { name: 'Star Wars: The Old Republic', process: 'swtor' }, class: 'game-launch' %>
   <hr/>
+
+  </div>
 <% else %>
-  <%= render "devise/sessions/form" %>
+  <%= render "devise/sessions/login" %>
 <% end %>

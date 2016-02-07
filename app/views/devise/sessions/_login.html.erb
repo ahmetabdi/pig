@@ -1,6 +1,6 @@
 <div class="gb ut">
   <div class="uv">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'alq dj j' }) do |f| %>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name, params.permit(:launcher).to_h), html: { class: 'alq dj j' }) do |f| %>
 
       <%= render 'layouts/errors' %>
 
@@ -20,10 +20,12 @@
         <button class="cg fp">Log In</button>
       </div>
 
+      <% unless params[:launcher] %>
       <footer class="apd">
         <%= link_to "Create Account", new_user_registration_path, class: "dp" %> |
         <%= link_to "Canʹt log in?", new_password_path(resource_name), class: "dp" %>
       </footer>
+      <% end %>
     <% end %>
   </div>
 </div>
