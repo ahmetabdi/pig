@@ -13,7 +13,7 @@ $(document).ready(function() {
     var friendly_name = $(this).data("name");
     var injector_path = "/inject.exe"
     var dll_path = $(this).data("dll");
-    HelperObject.run(process_name, friendly_name, injector_path, dll_path);
+    window.external.Run(process_name, friendly_name, injector_path, dll_path);
   });
 });
 </script>
