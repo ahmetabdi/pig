@@ -11,16 +11,22 @@ $(document).ready(function() {
   $(".game-launch").click(function() {
     var process_name = $(this).data("process");
     var friendly_name = $(this).data("name");
-    HelperObject.run(process_name, friendly_name);
+    var injector_path = "/inject.exe"
+    var dll_path = $(this).data("dll");
+    HelperObject.run(process_name, friendly_name, injector_path, dll_path);
   });
 });
 </script>
 
 <% if user_signed_in? %>
 <div class="w-full">
-  <%= link_to (image_tag 'games/blade-and-soul-black.png', width: 250), '#', data: { name: 'Blade & Soul', process: 'Client' }, class: 'game-launch' %>
+  <%= link_to (image_tag 'games/blade-and-soul-black.png', width: 250), '#', data: { name: 'Blade & Soul',
+                                                                                     process: 'Client',
+                                                                                     dll: '/PigDll.dll' }, class: 'game-launch' %>
   <hr/>
-  <%= link_to (image_tag 'games/star-wars-the-old-republic.png', width: 250), '#', data: { name: 'Star Wars: The Old Republic', process: 'swtor' }, class: 'game-launch' %>
+  <%= link_to (image_tag 'games/star-wars-the-old-republic.png', width: 250), '#', data: { name: 'Star Wars: The Old Republic',
+                                                                                           process: 'swtor',
+                                                                                           dll: '/PigDll.dll' }, class: 'game-launch' %>
   <hr/>
 </div>
 <% else %>
