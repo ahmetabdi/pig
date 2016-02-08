@@ -11,9 +11,8 @@ $(document).ready(function() {
   $(".game-launch").click(function() {
     var process_name = $(this).data("process");
     var friendly_name = $(this).data("name");
-    var injector_path = "/inject.exe"
     var dll_path = $(this).data("dll");
-    window.external.Run(process_name, friendly_name, injector_path, dll_path);
+    window.external.Run(process_name, friendly_name, dll_path);
   });
 });
 </script>
