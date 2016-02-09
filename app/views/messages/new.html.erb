@@ -1,5 +1,5 @@
-<div class="container-fluid container-fill-height">
-  <div class="container-content-middle">
+<div class="container p-t-md">
+  <div class="row">
     <%= form_for @message, url: contact_path, html: { class: 'm-x-auto text-center app-login-form' } do |message_form| %>
       <%= render 'layouts/flash_errors', object: @message %>
 

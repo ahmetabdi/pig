@@ -1,5 +1,5 @@
-<div class="container-fluid container-fill-height">
-  <div class="container-content-middle">
+<div class="container p-t-md">
+  <div class="row">
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'm-x-auto text-center app-login-form' }) do |f| %>
 
       <%= devise_error_messages! %>
@@ -22,7 +22,12 @@
 
       <div class="m-b-lg">
         <button class="btn btn-primary fw">Register</button>
-        <p class="tos">Signing up signifies that you have read and agree to the <a href="/policy/tos">Terms of Service</a> and <a href="/policy/privacy">Privacy Policy</a>.</p>
+
+        <div class="panel panel-default m-b-md" style="margin-top: 20px;">
+          <div class="panel-body">
+            <p>Signing up signifies that you have read and agree to the <a href="/policy/tos">Terms of Service</a> and <a href="/policy/privacy">Privacy Policy</a>.</p>
+          </div>
+        </div>
       </div>
 
       <footer class="screen-login">

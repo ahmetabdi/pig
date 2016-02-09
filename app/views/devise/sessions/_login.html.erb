@@ -1,5 +1,5 @@
-<div class="container-fluid container-fill-height">
-  <div class="container-content-middle">
+<div class="container p-t-md">
+  <div class="row">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name, params.permit(:launcher).to_h), html: { class: 'm-x-auto text-center app-login-form' }) do |f| %>
 
       <%= render 'layouts/errors' %>
