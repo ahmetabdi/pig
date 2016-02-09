@@ -20,11 +20,7 @@ class ApplicationController < ActionController::Base
   private
 
   def layout
-    if is_a?(HolderController)
-      "holder"
-    else
-      "application"
-    end
+    "application"
   end
 
 end

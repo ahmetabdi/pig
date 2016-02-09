@@ -1,12 +1,18 @@
 class PagesController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:hook]
+  before_action :authenticate_user!, only: [:download]
+  before_action :is_approved?, only: [:download]
 
   def home
-    @page = 'home-page'
+  end
+
+  def hacks
   end
 
   def download
-    @page = 'download-page'
+  end
+
+  def faqs
   end
 
   # Instant Payment Notification - notify_url
@@ -16,11 +22,25 @@ class PagesController < ApplicationController
     user = User.find_by(email: params["custom"]) # Get user by callback email (Devise email)
 
     if user
-      # if params["payment_status"] == "Completed"
-      #   # Do a susessful payment confirmation
-      # end
+      if params["payment_status"] == "Completed"
+        # Approve the user
+        user.update_attribute(:approved, true)
+        # Send email notification on download instructions
+        # TODO
+      end
       PaymentLog.create!(log: params.permit!.to_h, user: user)
     end
     render nothing: true
+  end
+
+
+  private
+
+  def is_approved?
+    if current_user.approved?
+      true
+    else
+      render text: 'You are not approved.'
+    end
   end
 end

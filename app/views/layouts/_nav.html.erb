@@ -1,38 +1,48 @@
-<nav class="ck pc os app-navbar">
-  <div class="by">
-    <div class="or">
-      <button type="button" class="ou collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
-        <span class="cv">Toggle navigation</span>
-        <span class="ov"></span>
-        <span class="ov"></span>
-        <span class="ov"></span>
+<nav class="navbar navbar-inverse navbar-fixed-top app-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-      <a class="e" href="/">
+      <a class="navbar-brand" href="/">
          <%= image_tag("logo.png", alt: 'brand') %>
       </a>
     </div>
-    <div class="f collapse" id="navbar-collapse-main">
+    <div class="navbar-collapse collapse" id="navbar-collapse-main">
 
-        <ul class="nav navbar-nav ss">
+        <ul class="nav navbar-nav hidden-xs">
           <li class="active">
             <a href="/">Home</a>
           </li>
+          <% if false %>
+          <li>
+            <a href="/hacks">Hacks</a>
+          </li>
+          <% end %>
+          <li>
+            <a href="/faqs">FAQs</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+          <% if current_user && current_user.approved? %>
+          <li>
+            <a href="/download">Download</a>
+          </li>
+          <% end %>
         </ul>
 
-        <form class="ow og i" role="search">
-          <div class="et">
-            <input type="text" class="form-control" data-action="grow" placeholder="Search">
-          </div>
-        </form>
-
         <% if user_signed_in? %>
-        <ul class="nav navbar-nav og ale ss">
+        <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
           <li>
             <%= link_to "Logout", destroy_user_session_path %>
           </li>
         </ul>
         <% else %>
-        <ul class="nav navbar-nav og ale ss">
+        <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
           <li>
             <a href="/login">Login</a>
           </li>
@@ -42,7 +52,7 @@
         </ul>
         <% end %>
 
-        <ul class="nav navbar-nav st su sv">
+        <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg">
           <li><a href="/">Home</a></li>
           <% if user_signed_in? %>
           <li><%= link_to "Logout", destroy_user_session_path %></li>

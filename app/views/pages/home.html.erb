@@ -1,42 +1,22 @@
-<div class="anq" id="app-growl"></div>
-
-<div class="by amt">
-  <div class="gc">
-    <div class="gn">
-      <div class="qv rc aog alu">
-        <div class="qx" style="height: 165px;">
-          <%= image_tag("holder/pig.png", class: 'hoz') %>
-        </div>
-        <div class="qw dj">
-          <p class="alu">Get stronger.</p>
-
-          <ul class="aoi">
-            <li class="aoj">
-              <a href="#userModal" class="aku" data-toggle="modal">
-                Hacks
-                <h5 class="ali">2</h5>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-       <div class="qv rc sm sp">
-        <div class="qw">
-          <h5 class="ald">Games</h5>
-            <%= image_tag("games/blade-and-soul-black.png", alt: 'blade-and-soul', style: 'height: auto;width:100%;') %>
-            <hr/>
-            <%= image_tag("games/star-wars-the-old-republic.png", alt: 'star-wars-the-old-republic', style: 'height: auto;width:100%;') %>
+<div class="container p-t-md">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default visible-md-block visible-lg-block">
+        <div class="panel-body">
+          <h5 class="m-t-0">Games</h5>
+          <%= image_tag("games/blade-and-soul-black.png", alt: 'blade-and-soul', style: 'height: auto;width:100%;') %>
+          <hr/>
+          <%= image_tag("games/star-wars-the-old-republic.png", alt: 'star-wars-the-old-republic', style: 'height: auto;width:100%;') %>
         </div>
       </div>
     </div>
 
-    <div class="gz">
-      <ul class="ca qo anx">
-        <li class="qf b aml">
-          <div class="qg">
-            <div class="qn">
-              <small class="eg dp">*</small>
+    <div class="col-md-6">
+      <ul class="list-group media-list media-list-stream">
+        <li class="media list-group-item p-a">
+          <div class="media-body">
+            <div class="media-heading">
+              <small class="pull-right text-muted">*</small>
               <h4 style="color: red;"><u>Announcement</u></h4>
             </div>
             <p>
@@ -44,10 +24,11 @@
             </p>
           </div>
         </li>
-        <li class="qf b aml">
-          <div class="qg">
-          	<div class="qn">
-              <small class="eg dp"><%= Date.parse("2016-02-05").strftime("%b %-d,%Y") %></small>              <h5>Blade and Soul</h5>
+        <li class="media list-group-item p-a">
+          <div class="media-body">
+          	<div class="media-heading">
+              <small class="pull-right text-muted"><%= Date.parse("2016-02-05").strftime("%b %-d,%Y") %></small>
+              <h5>Blade and Soul</h5>
             </div>
             <p>
               Flyhack, Speedhack, LagMove, Hotkeys
@@ -57,10 +38,10 @@
             </p>
           </div>
         </li>
-        <li class="qf b aml">
-          <div class="qg">
-          	<div class="qn">
-              <small class="eg dp"><%= Date.parse("2016-02-05").strftime("%b %-d,%Y") %></small>
+        <li class="media list-group-item p-a">
+          <div class="media-body">
+          	<div class="media-heading">
+              <small class="pull-right text-muted"><%= Date.parse("2016-02-05").strftime("%b %-d,%Y") %></small>
               <h5>Star Wars The Old Republic</h5>
             </div>
             <p>
@@ -71,9 +52,9 @@
             </p>
           </div>
         </li>
-        <li class="qf b aml">
-          <div class="qg">
-            <div class="qn">
+        <li class="media list-group-item p-a">
+          <div class="media-body">
+            <div class="media-heading">
               <h5>Newsletter - Subscribe now for up-to-the-minute news</h5>
             </div>
             <p>
@@ -110,10 +91,10 @@
       </ul>
     </div>
 
-    <div class="gn">
-      <div class="qv rc alu ss">
-        <div class="qw">
-          <h5 class="ald">Videos</h5>
+    <div class="col-md-3">
+      <div class="panel panel-default m-b-md hidden-xs">
+        <div class="panel-body">
+          <h5 class="m-t-0">Videos</h5>
           <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/i-YX6oU2afA' frameborder='0' allowfullscreen></iframe></div>
           <hr/>
           <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/p10vNex_RKI' frameborder='0' allowfullscreen></iframe></div>
