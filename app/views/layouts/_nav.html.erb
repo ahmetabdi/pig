@@ -17,6 +17,17 @@
           <li class="active">
             <a href="/">Home</a>
           </li>
+          <li>
+            <a href="/faqs">FAQs</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+          <% if current_user && current_user.approved? %>
+          <li>
+            <a href="/download">Download</a>
+          </li>
+          <% end %>
         </ul>
 
         <form class="ow og i" role="search">
