@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     get "/register" => "devise/registrations#new"
   end
 
+  get '/hacks', to: 'pages#hacks'
   get '/download', to: 'pages#download'
   get '/support', to: 'pages#support'
   get '/faqs', to: 'pages#faqs', as: 'faqs'

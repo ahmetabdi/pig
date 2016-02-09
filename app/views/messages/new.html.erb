@@ -1,21 +1,28 @@
-<%= form_for @message, url: contact_path do |message_form| %>
-  <fieldset>
-    <div class="field">
-      <%= message_form.text_field :name, placeholder: "Name" %>
-    </div>
+<div class="gb ut">
+  <div class="uv">
+    <%= form_for @message, url: contact_path, html: { class: 'alq dj j' } do |message_form| %>
 
-    <div class="field">
-      <%= message_form.email_field :email, placeholder: "Email"%>
-    </div>
+      <%= render 'layouts/flash_errors', object: @message %>
 
-    <div class="field">
-      <%= message_form.text_area :content, placeholder: "Message"%>
-    </div>
-  </fieldset>
+      <div class="l amb">
+        <%= image_tag('login.png', alt: "brand") %>
+      </div>
 
-  <fieldset>
-    <div class="field">
-      <%= message_form.submit "Send" %>
-    </div>
-  </fieldset>
-<% end %>
+      <div class="et">
+        <%= message_form.text_field :name, placeholder: "Name", class: 'form-control' %>
+      </div>
+
+      <div class="et">
+        <%= message_form.email_field :email, placeholder: "Email", class: 'form-control' %>
+      </div>
+
+      <div class="et alu">
+        <%= message_form.text_area :content, placeholder: "Message", class: 'form-control' %>
+      </div>
+
+      <div class="amb">
+        <button class="cg fp">Send</button>
+      </div>
+    <% end %>
+  </div>
+</div>

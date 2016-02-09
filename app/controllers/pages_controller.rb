@@ -6,6 +6,9 @@ class PagesController < ApplicationController
   def home
   end
 
+  def hacks
+  end
+
   def download
   end
 
