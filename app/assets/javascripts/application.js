@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require tether
-//= require bootstrap-sprockets
+//= require bootstrap/application
+//= require bootstrap/chart
+//= require bootstrap/toolkit

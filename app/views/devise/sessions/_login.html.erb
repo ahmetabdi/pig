@@ -1,29 +1,29 @@
-<div class="gb ut">
-  <div class="uv">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name, params.permit(:launcher).to_h), html: { class: 'alq dj j' }) do |f| %>
+<div class="container-fluid container-fill-height">
+  <div class="container-content-middle">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name, params.permit(:launcher).to_h), html: { class: 'm-x-auto text-center app-login-form' }) do |f| %>
 
       <%= render 'layouts/errors' %>
 
-      <div class="l amb">
+      <div class="app-brand m-b-lg">
         <%= image_tag('login.png', alt: "brand") %>
       </div>
 
-      <div class="et">
+      <div class="form-group">
         <%= f.email_field :email, placeholder: "Email Address", autofocus: false, autocomplete: false, class: 'form-control' %>
       </div>
 
-      <div class="et alu">
+      <div class="form-group m-b-md">
         <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'form-control' %>
       </div>
 
-      <div class="amb">
-        <button class="cg fp fw">Log In</button>
+      <div class="m-b-lg">
+        <button class="btn btn-primary fw">Log In</button>
       </div>
 
       <% unless params[:launcher] %>
-      <footer class="apd">
-        <%= link_to "Create Account", new_user_registration_path, class: "dp" %> |
-        <%= link_to "Canʹt log in?", new_password_path(resource_name), class: "dp" %>
+      <footer class="screen-login">
+        <%= link_to "Create Account", new_user_registration_path, class: "text-muted" %> |
+        <%= link_to "Canʹt log in?", new_password_path(resource_name), class: "text-muted" %>
       </footer>
       <% end %>
     <% end %>

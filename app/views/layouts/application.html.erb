@@ -27,7 +27,7 @@
     <% end %>
   </head>
 
-  <body>
+  <body class="with-top-navbar">
     <%= render 'layouts/nav' unless params[:launcher] || current_page?(launcher_path) %>
     <%= yield %>
     <%= render 'layouts/footer' unless params[:launcher] || current_page?(launcher_path) %>

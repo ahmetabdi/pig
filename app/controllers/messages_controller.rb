@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
 
-    if @message.valid?
+    if verify_recaptcha(model: @message) && @message.valid?
       ContactMailer.new_message(@message).deliver
       redirect_to contact_path, notice: "Your messages has been sent."
     else

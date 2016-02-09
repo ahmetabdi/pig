@@ -1,32 +1,24 @@
-@import "bootstrap/bootstrap";
-@import "bootstrap/toolkit";
-
-.signup .tos {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.fw {
-  width: 100%;
-}
-
-.hoz {
-	display:block; margin:auto;
-}
+/*
+ * Application level styles
+ * (things that dont make sense in a toolkit :)
+ * copyright @colossal 2015
+ */
 
 /* docs overrides */
-.a {
+.highlight {
   background-color: #fff;
   border-color: #d3e0e9;
 }
 
+
 /* general overrides */
-.b .c {
+.list-group-item .glyphicon {
   line-height: 1.4;
 }
-.d .close {
+.modal-header .close {
   margin-top: 4px;
 }
+
 
 /* navbar */
 .app-navbar {
@@ -36,48 +28,49 @@
 .app-navbar .form-control {
   box-shadow: none;
 }
-.app-navbar .e img {
+.app-navbar .navbar-brand img {
   width: 85px;
 }
-.app-navbar .f {
+.app-navbar .navbar-collapse {
   max-height: inherit;
 }
-.app-navbar .f:after {
+.app-navbar .navbar-collapse:after {
   height: 100vh;
 }
 .app-navbar .form-control {
   border-color: #1C73A5;
 }
-.g {
+.app-notifications {
   margin-left: -12px;
   padding-bottom: 10px !important;
 }
-.g .h:before {
+.app-notifications .icon:before {
   font-size: 20px;
 }
 @media (min-width: 768px) {
-  .app-navbar .f:after {
+  .app-navbar .navbar-collapse:after {
     height: auto;
   }
 }
 @media (max-width: 768px) {
-  .i {
+  .app-search {
     margin-top: -1px;
   }
 }
 
+
 /* misc */
-.j {
-  max-width: 320px;
+.app-login-form {
+  max-width: 304px;
   margin-top: -60px;
 }
-.k {
+.app-new-msg {
   margin-right: 10px;
 }
-.l {
+.app-brand {
   width: 40%;
   display: inline-block;
 }
-.l img {
+.app-brand img {
   width: 100%;
 }

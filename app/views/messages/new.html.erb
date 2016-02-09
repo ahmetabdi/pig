@@ -1,27 +1,30 @@
-<div class="gb ut">
-  <div class="uv">
-    <%= form_for @message, url: contact_path, html: { class: 'alq dj j' } do |message_form| %>
-
+<div class="container-fluid container-fill-height">
+  <div class="container-content-middle">
+    <%= form_for @message, url: contact_path, html: { class: 'm-x-auto text-center app-login-form' } do |message_form| %>
       <%= render 'layouts/flash_errors', object: @message %>
 
-      <div class="l amb">
+      <div class="app-brand m-b-lg">
         <%= image_tag('login.png', alt: "brand") %>
       </div>
 
-      <div class="et">
+      <div class="form-group">
         <%= message_form.text_field :name, placeholder: "Name", class: 'form-control' %>
       </div>
 
-      <div class="et">
+      <div class="form-group">
         <%= message_form.email_field :email, placeholder: "Email", class: 'form-control' %>
       </div>
 
-      <div class="et alu">
-        <%= message_form.text_area :content, placeholder: "Message", class: 'form-control' %>
+      <div class="form-group m-b-md">
+        <%= message_form.text_area :content, placeholder: "Message", class: 'form-control', rows: "5" %>
       </div>
 
-      <div class="amb">
-        <button class="cg fp">Send</button>
+      <div class="form-group">
+      <%= recaptcha_tags %>
+      </div>
+
+      <div class="m-b-lg">
+        <button class="btn btn-primary fw">Send</button>
       </div>
     <% end %>
   </div>
