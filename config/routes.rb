@@ -20,6 +20,5 @@ Rails.application.routes.draw do
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
 
-  # root to: "holder#holder"
   root to: "pages#home"
 end
