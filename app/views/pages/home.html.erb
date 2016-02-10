@@ -40,8 +40,8 @@
               <%= link_to 'Purchase Lifetime $15', paypal_url, class: 'btn btn-sm btn-primary-outline' %>
             <% else %>
             <p>
-              <button type="button" class="btn btn-xs btn-primary-outline login">Login</button> or
-              <button type="button" class="btn btn-xs btn-primary-outline register">Register</button>
+              <%= link_to 'Login', '/login', class: 'btn btn-xs btn-primary-outline' %> or
+              <%= link_to 'Register', '/register', class: 'btn btn-xs btn-primary-outline' %>
               in order to purchase.
             </p>
             <% end %>
