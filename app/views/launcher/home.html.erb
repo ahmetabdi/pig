@@ -18,6 +18,7 @@ $(document).ready(function() {
 </script>
 
 <% if user_signed_in? %>
+<% if current_user.approved? %>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -32,6 +33,15 @@ $(document).ready(function() {
     <hr/>
     </div>
   </div>
+<% else %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Payment is Pending / Awaiting Approval may take 5-10 minutes after payment</h2>
+      </div>
+    </div>
+  </div>
+<% end %>
 </div>
 <% else %>
   <%= render "devise/sessions/login" %>
