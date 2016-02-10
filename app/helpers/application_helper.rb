@@ -21,7 +21,7 @@ module ApplicationHelper
       cmd: "_xclick",
       upload: 1,
       return: "http://www.pighack.com/download",
-      amount: 20,
+      amount: 15,
       currency_code: 'USD',
       item_name: "PigHack Software (Lifetime)",
       item_number: 1,
