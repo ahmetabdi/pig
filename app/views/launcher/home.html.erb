@@ -11,6 +11,11 @@ img{
 
 <script>
 $(document).ready(function() {
+
+  $(this).bind("contextmenu", function(e) {
+      e.preventDefault();
+  });
+
   $(".game-launch").click(function() {
     var process_name = $(this).data("process");
     var friendly_name = $(this).data("name");
