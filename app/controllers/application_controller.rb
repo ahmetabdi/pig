@@ -22,5 +22,4 @@ class ApplicationController < ActionController::Base
   def layout
     "application"
   end
-
 end

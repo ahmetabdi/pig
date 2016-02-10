@@ -15,7 +15,10 @@
 
         <ul class="nav navbar-nav hidden-xs">
           <li class="active">
-            <a href="/">Home</a>
+            <a href="/">
+              <span class="icon icon-location-pin"></span>
+              Home
+            </a>
           </li>
           <% if false %>
           <li>
@@ -23,10 +26,16 @@
           </li>
           <% end %>
           <li>
-            <a href="/faqs">FAQs</a>
+            <a href="/faqs">
+              <span class="icon icon-help"></span>
+              FAQs
+            </a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/contact">
+              <span class="icon icon-mail"></span>
+              Contact
+            </a>
           </li>
           <% if current_user && current_user.approved? %>
           <li>
