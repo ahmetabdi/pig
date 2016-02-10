@@ -4,6 +4,9 @@ img{
   margin-left: auto;
   margin-right: auto
 }
+.with-top-navbar {
+  padding-top: 0px;
+}
 </style>
 
 <script>
@@ -22,7 +25,6 @@ $(document).ready(function() {
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-    <hr/>
     <%= link_to (image_tag 'games/blade-and-soul-black.png', width: 250), '#', data: { name: 'Blade & Soul',
                                                                                      process: 'Client',
                                                                                      dll: '/PigDll.dll' }, class: 'game-launch' %>
