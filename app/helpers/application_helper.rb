@@ -29,6 +29,6 @@ module ApplicationHelper
       notify_url: "http://www.pighack.com/hook"
     }
     # "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
-    "https://www.paypal.com/cgi-bin/webscr" + values.to_query
+    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 end
