@@ -40,7 +40,7 @@ class PagesController < ApplicationController
     if current_user.approved?
       true
     else
-      render text: 'You are not approved.'
+      render text: 'Your payment is currently pending check back in 5-10 minutes!'
     end
   end
 end

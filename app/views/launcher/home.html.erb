@@ -4,10 +4,18 @@ img{
   margin-left: auto;
   margin-right: auto
 }
+.with-top-navbar {
+  padding-top: 0px;
+}
 </style>
 
 <script>
 $(document).ready(function() {
+
+  $(this).bind("contextmenu", function(e) {
+      e.preventDefault();
+  });
+
   $(".game-launch").click(function() {
     var process_name = $(this).data("process");
     var friendly_name = $(this).data("name");
@@ -18,10 +26,10 @@ $(document).ready(function() {
 </script>
 
 <% if user_signed_in? %>
+<% if current_user.approved? %>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-    <hr/>
     <%= link_to (image_tag 'games/blade-and-soul-black.png', width: 250), '#', data: { name: 'Blade & Soul',
                                                                                      process: 'Client',
                                                                                      dll: '/PigDll.dll' }, class: 'game-launch' %>
@@ -32,6 +40,15 @@ $(document).ready(function() {
     <hr/>
     </div>
   </div>
+<% else %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Payment is Pending / Awaiting Approval may take 5-10 minutes after payment</h2>
+      </div>
+    </div>
+  </div>
+<% end %>
 </div>
 <% else %>
   <%= render "devise/sessions/login" %>
