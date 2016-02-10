@@ -22,7 +22,9 @@
           </li>
           <% if false %>
           <li>
-            <a href="/hacks">Hacks</a>
+            <a href="/hacks">
+              Hacks
+            </a>
           </li>
           <% end %>
           <li>
@@ -39,7 +41,10 @@
           </li>
           <% if current_user && current_user.approved? %>
           <li>
-            <a href="/download">Download</a>
+            <a href="/download">
+              <span class="icon icon-bug"></span>
+              Download
+            </a>
           </li>
           <% end %>
         </ul>
