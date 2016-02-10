@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # PAYPAL endpoints
   post '/hook', to: 'pages#hook'
   post '/', to: 'pages#home', as: 'paypal_return'
+  post '/download', to: 'pages#download'
 
   # Contact form
   get 'contact', to: 'messages#new', as: 'contact'
