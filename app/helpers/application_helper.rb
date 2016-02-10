@@ -12,15 +12,16 @@ module ApplicationHelper
     @devise_mapping ||= Devise.mappings[:user]
   end
 
-  def paypal_url(return_path)
+  def paypal_url
+    return "" unless current_user
     # https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/
     values = {
       business: 'strixxd@gmail.com',
-      custom: "customer_email_to_verify_payment@gmail.com",
+      custom: current_user.email,
       cmd: "_xclick",
       upload: 1,
-      return: "http://www.pighack.com/",
-      amount: 20,
+      return: "http://www.pighack.com/download",
+      amount: 15,
       currency_code: 'USD',
       item_name: "PigHack Software (Lifetime)",
       item_number: 1,
