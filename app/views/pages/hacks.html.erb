@@ -1,0 +1,28 @@
+<div class="profile-header text-center bns-bg" style="">
+  <div class="container">
+    <div class="container-inner">
+      <%= image_tag("games/blade-and-soul.png", alt: 'brand', class: 'img-circle media-object') %>
+      <p class="profile-header-bio">
+      <% if current_user %>
+        <%= link_to 'Purchase Lifetime $15', paypal_url, class: 'btn btn-sm btn-primary' %>
+      <% else %>
+        <%= link_to 'Login', '/login', class: 'btn btn-xs btn-primary' %> or
+        <%= link_to 'Register', '/register', class: 'btn btn-xs btn-primary' %>
+        in order to purchase.
+      <% end %>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container m-y-md">
+   <div class='embed-container'><iframe src='https://www.youtube.com/embed/VI75JrrucaI' frameborder='0' allowfullscreen></iframe></div>
+    <div class='embed-container'><iframe src='https://www.youtube.com/embed/A2s8ZrxOuVI' frameborder='0' allowfullscreen></iframe></div>
+</div>
+<!-- <div class="container m-y-md" data-grid="images">
+  <img data-action="zoom" data-width="350" data-height="300" src="http://placehold.it/350x300/EEE04A/ffffff">
+  <img data-action="zoom" data-width="420" data-height="320" src="http://placehold.it/420x320/5cb85c/ffffff">
+  <img data-action="zoom" data-width="320" data-height="380" src="http://placehold.it/320x380/5bc0de/ffffff">
+  <img data-action="zoom" data-width="472" data-height="500" src="http://placehold.it/472x500/f0ad4e/ffffff">
+  <img data-action="zoom" data-width="540" data-height="360" src="http://placehold.it/540x360/FF3167/ffffff">
+</div>
+ -->
