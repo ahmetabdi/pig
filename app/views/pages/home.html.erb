@@ -37,7 +37,9 @@
               Working on NA + EU - <span style="color: green;">Undetected</span>
             </p>
             <% if current_user %>
+            <p>
               <%= link_to 'Purchase Lifetime $15', paypal_url, class: 'btn btn-sm btn-primary' %>
+            </p>
             <% else %>
             <p>
               <%= link_to 'Login', '/login', class: 'btn btn-xs btn-primary' %> or
@@ -55,7 +57,7 @@
           <div class="media-body">
           	<div class="media-heading">
               <small class="pull-right text-muted"><%= Date.parse("2016-02-05").strftime("%b %-d,%Y") %></small>
-              <h5>Star Wars The Old Republic - Coming Soon</h5>
+              <h5>Star Wars The Old Republic</h5>
             </div>
             <p>
               Flyhack, Speedhack, Anti-Slow (Cannot be slowed by abilities), Anti-Walls (Walk through walls), Hotkeys
@@ -63,6 +65,17 @@
             <p>
               Working on NA + EU - <span style="color: green;">Undetected</span>
             </p>
+            <% if current_user %>
+            <p>
+              <%= link_to 'Purchase Lifetime $15', paypal_url, class: 'btn btn-sm btn-primary' %>
+            </p>
+            <% else %>
+            <p>
+              <%= link_to 'Login', '/login', class: 'btn btn-xs btn-primary' %> or
+              <%= link_to 'Register', '/register', class: 'btn btn-xs btn-primary' %>
+              in order to purchase.
+            </p>
+            <% end %>
           </div>
         </li>
         <li class="media list-group-item p-a">
