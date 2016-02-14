@@ -9,6 +9,15 @@
           <%= image_tag("games/star-wars-the-old-republic.png", alt: 'star-wars-the-old-republic', style: 'height: auto;width:100%;') %>
         </div>
       </div>
+      <div class="panel panel-default visible-md-block visible-lg-block">
+        <div class="panel-body">
+          <h5 class="m-t-0">Images</h5>
+          <%= image_tag('games/bns/ss1.jpg', data: {action: "zoom"}, style: 'height: auto;width:100%;') %>
+          <%= image_tag('games/bns/ss2.jpg', data: {action: "zoom"}, style: 'height: auto;width:100%;padding-top:10px;') %>
+          <%= image_tag('games/bns/ss3.jpg', data: {action: "zoom"}, style: 'height: auto;width:100%;padding-top:10px;') %>
+          <%= image_tag('games/bns/ss4.jpg', data: {action: "zoom"}, style: 'height: auto;width:100%;padding-top:10px;') %>
+        </div>
+      </div>
     </div>
 
     <div class="col-md-6">
@@ -47,7 +56,6 @@
               in order to purchase.
             </p>
             <% end %>
-            <br/>
             <div>
               <%= link_to 'Watch Videos', hacks_path, class: 'btn btn-sm btn-primary' %>
             </div>
