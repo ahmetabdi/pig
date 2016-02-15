@@ -29,7 +29,7 @@ class PagesController < ApplicationController
         ContactMailer.new_member(@message).deliver
         # TODO
       end
-      PaymentLog.create!(log: params.permit!.to_h, user: user)
+      #PaymentLog.create!(log: params.permit!.to_h, user: user)
     end
     render nothing: true
   end
