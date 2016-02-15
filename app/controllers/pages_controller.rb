@@ -23,11 +23,10 @@ class PagesController < ApplicationController
 
     if user
       if params["payment_status"] == "Completed"
-        # Approve the user
-        user.update_attribute(:approved, true)
-        # Send email notification on download instructions
-        ContactMailer.new_member(user).deliver
-        # TODO
+        if !user.approved? # Dont approve them if they are already approved
+          user.update_attribute(:approved, true) # Approve the user
+          ContactMailer.new_member(user).deliver # Send email notification on download instructions
+        end
       end
       #PaymentLog.create!(log: params.permit!.to_h, user: user)
     end
