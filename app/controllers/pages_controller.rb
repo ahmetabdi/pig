@@ -26,6 +26,7 @@ class PagesController < ApplicationController
         # Approve the user
         user.update_attribute(:approved, true)
         # Send email notification on download instructions
+        ContactMailer.new_member(@message).deliver
         # TODO
       end
       PaymentLog.create!(log: params.permit!.to_h, user: user)
