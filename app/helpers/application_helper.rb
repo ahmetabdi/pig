@@ -15,8 +15,9 @@ module ApplicationHelper
   def paypal_url
     return "" unless current_user
     # https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/
+    # strixxd@gmail.com
     values = {
-      business: 'strixxd@gmail.com',
+      business: 'pighackk@gmail.com',
       custom: current_user.email,
       cmd: "_xclick",
       upload: 1,
