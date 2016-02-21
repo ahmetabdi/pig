@@ -17,7 +17,7 @@ module ApplicationHelper
     # https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/
     # strixxd@gmail.com
     values = {
-      business: 'pighackk@gmail.com',
+      business: 'strixxd@gmail.com',
       custom: current_user.email,
       cmd: "_xclick",
       upload: 1,
