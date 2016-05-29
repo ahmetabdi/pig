@@ -47,33 +47,6 @@
         </li>
         <li class="media list-group-item p-a">
           <div class="media-body">
-            <div class="media-heading">
-              <small class="pull-right text-muted"></small>
-              <h5>Overwatch, world first exclusive</h5>
-            </div>
-            <p>
-              Wallhacks, See all enemies! (ZERO FPS drop)
-            </p>
-            <%= image_tag('games/overwatch/1.jpg', data: {action: "zoom"}, style: 'height: auto;width:20%;') %>
-            <%= image_tag('games/overwatch/2.jpg', data: {action: "zoom"}, style: 'height: auto;width:20%;') %>
-            <%= image_tag('games/overwatch/3.jpg', data: {action: "zoom"}, style: 'height: auto;width:20%;') %>
-            <%= image_tag('games/overwatch/4.jpg', data: {action: "zoom"}, style: 'height: auto;width:20%;') %>
-            <br/><br/>
-            <% if current_user %>
-            <p>
-              <%= link_to 'Purchase Lifetime $15', paypal_url, class: 'btn btn-sm btn-primary' %>
-            </p>
-            <% else %>
-            <p>
-              <%= link_to 'Login', '/login', class: 'btn btn-xs btn-primary' %> or
-              <%= link_to 'Register', '/register', class: 'btn btn-xs btn-primary' %>
-              in order to purchase.
-            </p>
-            <% end %>
-          </div>
-        </li>
-        <li class="media list-group-item p-a">
-          <div class="media-body">
           	<div class="media-heading">
               <small class="pull-right text-muted"></small>
               <h5>Blade and Soul</h5>
